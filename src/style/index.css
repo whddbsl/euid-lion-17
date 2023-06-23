@@ -378,6 +378,7 @@ legend {
   align-items: stretch;
   padding: 0.5rem 3.75% 1.5rem;
   font-size: 0.625rem;
+  background: #FFFFFF;
   height: 70px;
   position: fixed;
   bottom: 0;
@@ -396,6 +397,145 @@ legend {
 
 .nav__item {
   display: block;
+}
+
+body {
+  margin-bottom: 69px;
+  position: relative;
+}
+
+.exchange_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0.625rem 6.25%;
+}
+.exchange_wrap h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.exchange_wrap_dropbtn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.exchange_wrap_dropbtn img {
+  width: 18px;
+  height: 18px;
+  margin-left: 0.375rem;
+}
+
+.exchange_wrap_menubtn a {
+  vertical-align: middle;
+}
+
+.tab_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background: #373F67;
+  color: #9DA1B4;
+  padding: 0.5rem 3.75%;
+  font-size: 0.875rem;
+}
+.tab_wrap li:nth-child(2) {
+  color: #FFFFFF;
+}
+
+.floating__btn {
+  width: 52px;
+  height: 52px;
+  border: none;
+  background: #373F67;
+  border-radius: 50%;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  right: 3.75%;
+  bottom: 81px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating__btn:click {
+  background: #ff0;
+}
+
+.exchange__list_box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0.75rem;
+  position: relative;
+  border-bottom: 1px solid #D3D3D3;
+  align-items: center;
+}
+
+.exchange__list dt {
+  font-size: 0.875rem;
+  line-height: 160%;
+}
+.exchange__list dd {
+  font-size: 0.625rem;
+  color: #9DA1B4;
+  margin-bottom: 0.25rem;
+}
+.exchange__list span {
+  display: flex;
+  align-items: center;
+}
+
+.exchange_label_ing {
+  padding: 0.25rem 0.375rem;
+  background: #5A85EE;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 0.625rem;
+  margin-right: 0.375rem;
+}
+
+.exchange_price {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.exchange__list_img {
+  width: 90px;
+  height: 90px;
+  background-color: #d3d3d3;
+  border-radius: 8px;
+  margin-right: 0.75rem;
+  order: -1;
+}
+
+.exchange_like_wrap {
+  position: absolute;
+  right: 12px;
+  bottom: 3px;
+}
+.exchange_like_wrap img {
+  vertical-align: middle;
+}
+
+.exchange_like_txt {
+  font-size: 0.6875rem;
+}
+
+.exchange_label_done {
+  padding: 0.25rem 0.375rem;
+  background: #9DA1B4;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 0.625rem;
+  margin-right: 0.375rem;
 }
 
 /*# sourceMappingURL=index.css.map */
