@@ -463,6 +463,7 @@ legend {
   line-height: 150%;
 }
 .button__img {
+  padding-top: 1px;
   width: 1.125rem;
   height: 1.125rem;
   border-radius: 50%;
@@ -477,6 +478,7 @@ legend {
 }
 
 .fa-check {
+  padding-top: 2px;
   width: 1.125rem;
   height: 1.125rem;
   border-radius: 50%;
