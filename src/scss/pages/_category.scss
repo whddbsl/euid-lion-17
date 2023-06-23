@@ -1,0 +1,108 @@
+@use "./../utils" as *;
+.categoryHeader {
+  @include flexbox($justify: center);
+
+  margin-top: rem(50px);
+  margin-bottom: rem(18px);
+  &__search {
+    width: rem(254px);
+    border: none;
+    color: $contentSecondary;
+    font-size: 14px;
+    line-height: 160%;
+  }
+}
+
+.search__container {
+  display: inline-block;
+  border-bottom: 1px solid $contentSecondary;
+  margin-left: 8px;
+}
+
+.categoryMain {
+  padding-left: 12px;
+  padding-right: rem(12px);
+  margin-bottom: rem(18px);
+
+  &__title {
+    font-size: rem(18px);
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: rem(18px);
+  }
+}
+
+.button__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: rem(16px);
+}
+
+.button {
+  @include flexbox(row, space-between, center, nowrap);
+  width: rem(144px);
+  height: rem(61px);
+  padding: rem(12px);
+  border-radius: rem(8px);
+  border: none;
+  // background: $contentSecondary;
+  background: #a7a7a7;
+  &__title {
+    font-size: rem(10px);
+    font-weight: 600;
+    color: #e9e9e9;
+    line-height: 150%;
+  }
+
+  &__subTitle {
+    font-size: rem(18px);
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__img {
+    width: rem(18px);
+    height: rem(18px);
+    border-radius: 50%;
+    background: $contentSecondary;
+    color: #d3d3d3;
+    display: block;
+  }
+}
+
+.checked{
+    background: $primary-color;
+    color: white;
+}
+
+.fa-check{
+    width: rem(18px);
+    height: rem(18px);
+    border-radius: 50%;
+    background: white;
+    color: $primary-color;
+}
+
+.button__wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer{
+    @include flexbox($justify: center)
+}
+
+.saveBtn{
+    text-align: center;
+    width: rem(302px);
+    height: rem(36px);
+    border-radius: rem(8px);
+    border: none;
+    background: $primary-color;
+    color: white;
+    font-size: rem(14px);
+    font-weight: 700;
+    line-height: 140%;
+}
