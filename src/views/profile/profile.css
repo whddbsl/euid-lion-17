@@ -1,0 +1,74 @@
+.user{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-items:center;
+}
+.user-profile {
+  width: 101px;
+  height: 120px; 
+  margin-top: 42px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content:center;
+  align-items:center;
+}
+.user-porofile__photo{
+  width: 68px;
+  height: 66px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 4px #ccc;
+  background-color:bisque;
+}
+.user-porofile__edit-link{
+  position: relative;
+  top: 15px;
+  right: 10px;
+}
+.user-porofile__edit-img{
+ background-color: #fff;
+ border-radius: 50%;
+ box-shadow: 0 0 4px 4px #ccc;
+ display: flex;
+ position: absolute;
+}
+
+.user-profile__id{
+  margin:0;
+  font-size:20px;
+}
+
+.user-profile__id-number{
+  border: 1px solid;
+  border-radius: 40%;
+  font-size: 0.1px;
+  color:#5A85EE;
+  background-color: none;
+  text-align:center;
+  padding:1px;
+  margin-left:6px;
+}
+
+.user-profile__status{
+  margin: 0;
+  font-size:10px;
+  color:#919191;
+}
+
+.user-porofile__list{
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: space-around;
+ list-style-type: none;
+ gap:4px
+}
+
+.user-porofile__list.a{
+  margin-top: 10px;
+  
+}
+
+
+
+
+
