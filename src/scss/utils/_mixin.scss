@@ -1,6 +1,7 @@
-@use "./../utils/unit" as *;
-
-// 포지션 관련 믹스인 
+@use "./unit" as *;
+@use "./color" as *;
+@use "./flexbox" as *;
+// 포지션 관련 믹스인
 
 @mixin pos {
   position: absolute;
@@ -121,4 +122,33 @@
 @mixin fit($posX: 50%, $posY: 50%, $fit: cover) {
   object-fit: $fit;
   object-position: $posX $posY;
+}
+
+// 버튼 믹스인
+
+@mixin button($radius: 8px, $bgc: $primary-color) {
+  width: 100%;
+  border: 0;
+  border-radius: rem($radius);
+  background-color: $bgc;
+  color: white;
+  font-size: rem(14px);
+  margin: rem(24px) 3.75% rem(34px);
+}
+
+// @mixin nav {
+//   @include navbar;
+//   @include navpage;
+// }
+
+@mixin navbar {
+  width: 100%;
+  height: rem(37px);
+  @include flexbox($justify: space-between);
+  padding: rem(8px) 3.75% rem(24px);
+  font-size: rem(10px);
+}
+
+@mixin navpage {
+  height: rem(88px);
 }
