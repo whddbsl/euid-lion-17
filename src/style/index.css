@@ -398,4 +398,102 @@ legend {
   display: block;
 }
 
+/* 헤더 */
+.board__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0.375rem 1.25rem;
+}
+.board__header h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: inline-block;
+  justify-self: flex-start;
+}
+.board__header span {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+/* 주제 목록 */
+.board__subject {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0.5rem 0.75rem;
+  border-top: 0.0625rem solid #919191;
+  border-bottom: 0.01875rem solid #919191;
+}
+.board__subject span:first-child {
+  background: url(./../../images/board/hamburger.png) left no-repeat;
+  padding-left: 1.125rem;
+}
+
+/* 주제 목록 버튼  */
+.subject__button {
+  border: 1px solid #9DA1B4;
+  border-radius: 20px;
+  font-size: 0.66rem;
+  padding: 0.375rem 0.625rem;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 게시판 글 내용 */
+.board__article {
+  font-size: 0.625rem;
+  color: #b1b4c3;
+  position: relative;
+  border-bottom: 0.01875rem solid #919191;
+  padding: 0.75rem;
+  line-height: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board__article .board__left {
+  width: 400px;
+}
+.board__article .board__label {
+  padding: 0 0.25rem;
+  color: #fff;
+  background-color: #c4c7d2;
+  border-radius: 4px;
+}
+.board__article h3 {
+  color: #000;
+  font-size: 0.875rem;
+}
+.board__article span[class^=icon] {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.board__article .icon__fullpeople {
+  background: url(./../../images/board/fullpeople.png);
+}
+.board__article .icon__people {
+  background: url(./../../images/board/people.png);
+}
+.board__article .icon__calender {
+  background: url(./../../images/board/calender.png);
+}
+.board__article .board__count {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+}
+.board__article img {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
 /*# sourceMappingURL=index.css.map */
