@@ -109,3 +109,70 @@
     right:rem(12px);
   }
 }
+
+/* boardTheme.html */
+.board__subjectSettings{
+  background-color:$primary-color;
+  position:fixed;
+  width:100%;
+  bottom:rem(70px);
+  padding:rem(12px);
+  font-size:0.875rem;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  
+
+  li{
+    @include flexbox($justify:flex-start);
+    align-items:center;
+    padding:rem(12px) rem(12px) rem(12px) 0;
+  }
+
+  &--participating{
+    margin-left:auto;
+    padding: rem(6px) rem(20px);
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #fff;
+    color:$secondary-color;
+    font-size:0.66rem;
+  }
+
+  &--close{
+    position:absolute;
+    width:rem(18px);
+    height:rem(18px);
+    top:rem(18px);
+    right:rem(14px);
+    background:url("./../../images/board/close.png");
+    border:none;
+    cursor: pointer;
+  }
+
+  input{
+    display:none;
+
+    & + label{
+     display:inline-block;
+     width:2.125rem;
+     height:2.125rem;
+     border:2px solid $contentSecondary;
+     border-radius:6px;
+     background-color: $contentSecondary;
+     margin-right:rem(8px);
+   }
+
+   &:checked + label{
+    background-color: $tertiary;
+   }
+  }
+
+  &--title, li{
+    color:#fff;
+  }
+  &--title2{
+    color:$contentSecondary;
+    margin-top: rem(4px);
+    margin-bottom:rem(12px);
+  }
+}
