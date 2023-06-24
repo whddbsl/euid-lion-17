@@ -454,12 +454,14 @@ legend {
   border-bottom: 0.01875rem solid #919191;
   padding: 0.75rem;
   line-height: 160%;
+}
+.board__article .board__left {
+  width: 50%;
+}
+.board__article .board__left * {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.board__article .board__left {
-  width: 400px;
 }
 .board__article .board__label {
   padding: 0 0.25rem;

@@ -56,10 +56,13 @@
   border-bottom:rem(0.3px) solid $contentSecondary;
   padding: rem(12px);
   line-height:160%;
-  @include textOver;
+
 
   .board__left{
-    width:400px; 
+    width:50%; 
+    *{
+      @include textOver;
+    }
   }
 
   .board__label{
@@ -68,6 +71,8 @@
     background-color: #c4c7d2;
     border-radius: 4px;
   }
+
+
 
   h3{
     color:#000;
