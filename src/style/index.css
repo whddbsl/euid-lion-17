@@ -398,4 +398,38 @@ legend {
   display: block;
 }
 
+body {
+  margin: 3.75% 0;
+}
+
+h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.75rem 3.75%;
+}
+
+.search__list::-webkit-scrollbar {
+  display: none;
+}
+
+.search__list {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow-x: auto;
+  text-align: center;
+  padding: 0 3.75%;
+}
+.search__list li {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #9DA1B4;
+  border-radius: 20px;
+  font-size: 0.625rem;
+  margin-right: 4px;
+}
+.search__list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*# sourceMappingURL=index.css.map */
