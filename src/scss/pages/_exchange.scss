@@ -6,7 +6,7 @@ body {
 }
 
 // 헤더영역
-.exchange_wrap {
+.exchange_header_wrap {
   @include flexbox
   ($justify: space-between);
   padding: rem(10px) 6.25%;
@@ -44,25 +44,66 @@ body {
 }
 
 // 플로팅 버튼
-.floating__btn {
-  width: 52px;
-  height: 52px;
-  border: none;
-  background: $primary-color;
-  border-radius: 50%;
-  box-shadow: 4px 4px 6px rgba($color: #000000, $alpha: 25%);
+// .floating__btn {
+//   @include floating;
+// }
+
+// .floating__btn:click {
+//   background: #ff0;
+// }
+
+.exchange_float_btn {
   position: fixed;
   right: 3.75%;
   bottom: 81px;
   z-index: 3;
-  display: flex;
-  align-items :center;
-  justify-content: center;
 }
 
-.floating__btn:click {
-  background: #ff0;
+.exchange_float_img {
+  background: url(./../../images/floating/icon_plus.png) no-repeat center;
+  width: 52px;
+  height: 52px;
+  background-color: $primary-color;
+  box-shadow: 4px 4px 6px rgba($color: #000000, $alpha: 25%);
+  border-radius: 50%;
+  color: $background;
 }
+
+.exchange_float_img:active {
+  background: url(./../../images/floating/icon_plus_on.png) no-repeat center;
+  background-color: $background;
+  position: relative;
+  & .exchange_float_btn__list{
+    display: block;
+    position: absolute;
+    bottom: 52px;
+    right: 3.75%;
+  }
+}
+
+.exchange_float_btn__list {
+  display: none;
+  font-size: rem(14px);
+  font-weight: 400;
+  & li {
+    width: 108px;
+    height: 42px;
+    background: $primary-color;
+    border-radius: 12px;
+    border: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 4px;
+    & img {
+      margin-right: 4px;
+      vertical-align: center;
+    }
+  }
+  & li:last-child{
+    margin-bottom: 12px;
+  }
+}
+
 
 // 리스트 디자인
 .exchange__list_box {
@@ -78,25 +119,15 @@ body {
     font-size: rem(14px);
     line-height: 160%;
   }
-  & dd {
+  & .exchange__list_txt {
     font-size: rem(10px);
     color: #9DA1B4;
-    margin-bottom: rem(4px);
+    margin-bottom: rem(8px);
   }
-  & span {
+  & .exchange_price_wrap {
     display: flex;
     align-items: center;
   }
-}
-
-.exchange_label_ing {
-  padding: rem(4px) rem(6px);
-  background: $secondary-color;
-  border-radius: 4px;
-  font-weight: 600;
-  color: $background;
-  font-size: rem(10px);
-  margin-right: rem(6px);
 }
 
 .exchange_price {
@@ -113,6 +144,8 @@ body {
   order: -1;
 }
 
+// 좋아요
+
 .exchange_like_wrap {
   @include posRightBottom($r: 12px, $b: 3px);
   & img {
@@ -124,11 +157,24 @@ body {
   font-size: rem(11px);
 }
 
+// label 정의
+
+.exchange_label_ing {
+  display: inline-block;
+  padding: rem(4px) rem(6px);
+  background: $secondary-color;
+  border-radius: 4px;
+  font-weight: 400;
+  color: $background;
+  font-size: rem(10px);
+  margin-right: rem(6px);
+}
+
 .exchange_label_done {
   padding: rem(4px) rem(6px);
   background: #9DA1B4;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: 400;
   color: $background;
   font-size: rem(10px);
   margin-right: rem(6px);
