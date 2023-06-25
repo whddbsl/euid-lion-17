@@ -158,7 +158,8 @@ font-size: 11px;
 .user-feedback_like dd{
   margin: 0;
   font-size: 10px;
-  padding-top: 2px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
 .user-feedback_response{
@@ -174,20 +175,18 @@ font-size: 11px;
 .user-feedback_response dd{
   margin: 0;
   font-size: 10px;
-  padding-top: 2px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 /* 사용자 활동내역 */
 
-.user-activity{
-
-}
 
 .user-activity__item{
-  height: 53px;
+  height: 33px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  padding: 20px;
   font-size: 15px;
 }
 
@@ -196,6 +195,12 @@ font-size: 11px;
   text-decoration-line: none;
   color: #000;
   font-weight: 700;
+}
+
+/* 리스트 중 판매상품 border주기 위함 */
+.goods , .received{
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .user-activity__arrow{
@@ -247,10 +252,63 @@ font-size: 11px;
 /* 거래 후기  */
 
 
+.trader {
+  display: flex;
+  padding: 10px 14px 20px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+.trader__profile{
+  display: flex;
+}
 
+.trader__photo {
+  display: block;
+  height: 28px;
+  width: 28px;
+}
 
+.trader__photo__img{
+  border-radius:50%;
+}
 
+.trader__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.trader__info{ 
+  display: flex;
+  flex-flow: column;
+  margin-left:9px;
+}
+
+.trader__info__name{
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration-line: none;
+  color: #000;
+  padding-bottom: 2px;
+}
+
+.trader__info__history{
+  font-size: 10px;
+  color:#919191;
+  margin:0;
+  padding-top: 2px;
+}
+
+.trader__info__text{
+  font-size: 12px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.trader__info__more{
+  display: block;
+  width: 20px;
+  height: 20px;
+}
 
 
 
@@ -259,7 +317,6 @@ font-size: 11px;
 /* 기타 옵션 리스트 */
 .link__list {
   list-style-type: none;
-  background-color: aqua;
   height: 325px;
   box-sizing: border-box;
   padding: 16px 12px 87px 18px;
@@ -273,4 +330,9 @@ font-size: 11px;
   text-decoration-line: none;
   color: #000;
   margin-bottom: 18px;
+}
+
+.link__list__item-id{
+  padding-left: 150px;
+  color: #5A85EE;
 }
