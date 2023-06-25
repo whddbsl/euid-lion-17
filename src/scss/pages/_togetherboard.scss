@@ -25,13 +25,120 @@
   text-align:center;
   font-size:0.66rem;
 
-  img{
-    border:2px solid $secondary-color;
-    border-radius: 50px;
-    background-color: #e9e9e9;
-    padding:0.875rem;
+  figure{
+    img{
+      border:2px solid transparent;
+      border-radius: 50px;
+      background-color: #e9e9e9;
+      padding:0.875rem;
+    }
+
+    &:first-child, &:nth-child(2){
+      img{
+        border:2px solid $secondary-color;
+      }
+      figcaption{
+        color:$secondary-color;
+      }
+    }
   }
-  figcaption{
+}
+
+/* 정렬 메뉴 */
+
+.together__sort{
+  margin: 8px auto 12px 14px;
+}
+
+.together__sortButton {
+  border: 1px solid $contentTertiary;
+  border-radius: 20px;
+  font-size:0.66rem;
+  padding: rem(6px) rem(10px);
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:first-child{
+    background:url(./../../images/board/down.png) left no-repeat;
+    padding-left:rem(18px);
+  }
+}
+
+/* 글 목록 */
+
+
+.together__article{ 
+  font-size:rem(10px);
+  color:#b1b4c3;
+  position:relative;
+  border-top:rem(0.3px) solid $contentTertiary;
+  border-bottom:rem(0.3px) solid $contentTertiary;
+  padding: rem(12px);
+  line-height:160%;
+
+
+  .together__left{
+    width:60%; 
+    *{
+      @include textOver;
+    }
+
+    *:nth-child(2), *:nth-child(4){
+      margin-bottom:0.5rem;
+    }
+  }
+
+  h3{
+    color:#000;
+    font-size:0.875rem;
+    font-weight:600;
+  }
+
+  span[class^=icon]{
+    display:inline-block;
+    width:rem(14px);
+    height:rem(14px);
+  }
+
+  .together__recruiting{
     color:$secondary-color;
   }
+
+  .icon__fullpeople{
+    background: url(./../../images/board/fullpeople.png);
+  }
+
+  .icon__calender{
+    background: url(./../../images/board/calender.png);
+  }
+
+  .icon__img{
+    background: url(./../../images/board/img.png);
+    background-size: contain;
+  }
+
+  .together__time{
+    position:absolute;
+    bottom:rem(12px);
+    right:rem(12px);
+  }
+}
+
+/* 글쓰기 */
+
+.together__write{
+  position:fixed;
+  bottom: rem(70px) + 2rem;
+  right:rem(12px);
+  display:inline-block;
+  padding:10px;
+  height:48px;
+  width:48px;
+  border-radius: 50%;
+  color:#fff;
+  background: url(./../../images/board/plus.png) no-repeat center;
+  background-color: $primary-color;
+  box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index:2;
 }
