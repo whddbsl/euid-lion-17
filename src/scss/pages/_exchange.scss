@@ -44,15 +44,6 @@ body {
   }
 }
 
-// 플로팅 버튼
-// .floating__btn {
-//   @include floating;
-// }
-
-// .floating__btn:click {
-//   background: #ff0;
-// }
-
 .exchange_float_btn {
   position: fixed;
   right: 3.75%;
@@ -97,7 +88,6 @@ body {
     margin-bottom: 4px;
     & img {
       margin-right: 4px;
-      vertical-align: middle;
     }
   }
   & li:last-child{

@@ -820,7 +820,6 @@ body {
 }
 .exchange_float_btn__list li img {
   margin-right: 4px;
-  vertical-align: middle;
 }
 .exchange_float_btn__list li:last-child {
   margin-bottom: 12px;
