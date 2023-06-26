@@ -167,7 +167,7 @@ align-items: center;
   align-items: center;
   font-weight: 700;
  }
-
+ /* 취득 자격 블럭 */
  .user-certification{
   display: flex;
   flex-flow: column;
@@ -214,3 +214,5 @@ align-items: center;
   color:#A7A7A7;
   padding-top: 2px;
  }
+
+ 
