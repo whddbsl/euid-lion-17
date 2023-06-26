@@ -10,20 +10,21 @@ body {
 }
 .user-profile {
   width: 101px;
-  height: 120px; 
+  height: 120px;  
   margin-top: 42px;
   display: flex;
   flex-flow: wrap;
   justify-content:center;
   align-items:center;
 }
+/* 프로필 사진 */
 .user-porofile__photo{
   width: 68px;
   height: 66px;
   border-radius: 50%;
   box-shadow: 0 0 4px 4px #ccc;
-  background-color:bisque;
 }
+/* 프로필 수정 연필모양 */
 .user-porofile__edit-link{
   position: relative;
   top: 15px;
@@ -33,10 +34,9 @@ body {
  background-color: #fff;
  border-radius: 50%;
  box-shadow: 0 4px 4px #ccc; 
- display: flex;
  position: absolute;
 }
-
+/* 프로필 아이다 */
 .user-profile__id{
   margin:0;
   font-size:18px;
@@ -47,7 +47,6 @@ body {
   border-radius: 40%;
   font-size: 0.1px;
   color:#5A85EE;
-  background-color: none;
   text-align:center;
   padding:0.5px;
   margin-left:6px;
@@ -58,22 +57,28 @@ body {
   font-size:10px;
   color:#919191;
 }
-
+/* 프로필 리스트 */
 .user-porofile__list{
  padding: 0;
  display: flex;
  list-style-type: none;
  gap:30px;
- 
 }
 
-.user-porofile__list__img{
+.user-porofile__list__group{
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-porofile__list-img{
 display: block;
 padding-bottom: 6px;
-padding-left: 20%;
 }
 
-.user-porofile__list__item{
+.user-porofile__list-item{
 display: block; 
 text-decoration-line: none;
 color: black;    
@@ -81,17 +86,31 @@ font-size: 12px;
 font-weight: 700;
 }
 
-
 /* 열정온도  */
 .temperature{
 padding: 12px;
 
 }
+/* 열정온도 제목 */
+.temperature{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .temperature__text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.temperature__text__title{
 font-size: 11px;
 }
 
+.temperature__text__img{
+  padding-left: 2px;
+}
 
 .temperature__status{
   position: relative;
@@ -99,14 +118,9 @@ font-size: 11px;
 
 .temperature__status__degree{
   color: #5A85EE;
-   /* secondary-color: #5A85EE; */
-  font-size: 18px;
+  font-size: 15px;
   position: absolute;
-  transform: translateX(211px);
-}
-
-.temperature__status__item{
-
+  transform: translate(225px,-2px); 
 }
 
 .temperature__status__item__text{
@@ -127,13 +141,12 @@ font-size: 11px;
 .temperature__progress::-webkit-progress-bar {
   background-color: grey;
   border-radius:10px;
-  width: 296px;
+  width: 296px; 
   height: 8px;
 }
 
 .temperature__progress::-webkit-progress-value {
   background-color: #373F67;
-  /* primary-color: #373F67; */
   border-radius:10px;
 }
 /* 좋아요와 응답률 */
@@ -179,8 +192,6 @@ font-size: 11px;
   padding-left: 10px;
 }
 /* 사용자 활동내역 */
-
-
 .user-activity__item{
   height: 33px;
   display: flex;
@@ -208,7 +219,7 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   height: 16px;
   margin: 20px;
 }
-
+/* 매너평가 chaat */
 .user-activity__evaluation{
   padding: 14px 60px 14px 10px;
 }
@@ -250,33 +261,28 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* 거래 후기  */
-
-
 .trader {
   display: flex;
   padding: 10px 14px 20px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.trader__profile{
-  display: flex;
-}
-
-.trader__photo {
-  display: block;
+.trader__photo__img{
   height: 28px;
   width: 28px;
 }
 
-.trader__photo__img{
-  border-radius:50%;
-}
-
 .trader__content{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
+.trader__info__more{
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-left:60px;
+}
 .trader__info{ 
   display: flex;
   flex-flow: column;
@@ -300,20 +306,10 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 .trader__info__text{
   font-size: 12px;
+  font-weight: 700;
   margin: 0;
   padding-top: 5px;
 }
-
-.trader__info__more{
-  display: block;
-  width: 20px;
-  height: 20px;
-}
-
-
-
-
-
 /* 기타 옵션 리스트 */
 .link__list {
   list-style-type: none;
@@ -332,7 +328,12 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 18px;
 }
 
+/* 로그아웃 아이디 부분 */
+.list-logout{
+ display: flex;
+ justify-content: space-between;
+}
+
 .link__list__item-id{
-  padding-left: 150px;
   color: #5A85EE;
 }
