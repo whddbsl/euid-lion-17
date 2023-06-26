@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="엔터이듬(EnterEUID)" />
+  <meta name="keywords" content="멋사,이듬,EUID,마켓,프론트" />
+  <meta name="author" content="EUID-17" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./../src/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./../css/main.css" />
+  <meta property="og:title" content="엔터이듬(EnterEUID)" />
+  <meta property="og:description" content="당신 곁의 엔터이듬 마켓" />
+  <meta property="og:image" content="./../src/images/og-image.png" />
+  <meta property="og:image:alt" content="엔터이듬 로고" />
+  <title>profile</title>
+  <link rel="stylesheet" href="../views/profilecss/profile.css" />
+</head>
+
+<body>
+
+  <!-- 프로필 -->
+  <section class="user">
+    <div class="user-profile">
+      <img src="../images/profile/profilephoto.png" class="user-porofile__photo" alt="사용자 프로필 사진" />
+      <a href="" class="user-porofile__edit-link">
+        <img src="../images/profile/pencil2.png" class="user-porofile__edit-img" alt="연필 모양의 수정 링크" />
+      </a>
+      <h2 class="user-profile__id">EUID***<span class="user-profile__id-number">4기</span></h2>
+      <p class="user-profile__status">답변35</p>
+    </div>
+    <ul class="user-porofile__list">
+      <li class="user-porofile__list__group">
+        <img src="../images/profile/Q&A.png" alt="체크 동그라미 이미지" class="user-porofile__list-img" />
+        <a href="" class="user-porofile__list-item">나의 Q&A</a>
+      </li>
+      <li class="user-porofile__list__group">
+        <img src="../images/profile/profile.png" alt="사람 이미지" class="user-porofile__list-img" />
+        <a href="" class="user-porofile__list-item">나의 프로필</a>
+      </li>
+      <li class="user-porofile__list__group">
+        <img src="../images/profile/alramBell.png" alt="알람 종 이미지" class="user-porofile__list-img" />
+        <a href="" class="user-porofile__list-item">내소식</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 열정온도 -->
+  <div class="temperature">
+    <div class="temperature__text">
+      <span class="temperature__text__title">열정온도</span>
+      <img src="../images/profile/information.png" alt="i모양 이미지" class="temperature__text__img" />
+    </div>
+    <div class="temperature__status">
+      <span class="temperature__status__degree">41.2°C 🙂</span>
+      <div class="temperature__status__item">
+        <span class="temperature__status__item__text">첫 온도 36.5°C</span>
+        <img src="../images/profile/Polygon.png" alt="아래 방향 화살표" class="temperature__status__item__img" />
+      </div>
+      <progress value="41.2" max="100" class="temperature__progress"></progress>
+    </div>
+  </div>
+
+  <!-- 좋아요와 응답률 -->
+  <dl class="user-feedback">
+    <div class="user-feedback_like">
+      <dt>
+        <img src="../images/profile/heart.png" alt="" /> 받은 좋아요 100%
+      </dt>
+      <dd>
+        11개 중 11명이 만족
+      </dd>
+    </div>
+    <div class="user-feedback_response">
+      <dt>
+        <img src="../images/profile/speech.png" alt="" /> 응답률 -%
+      </dt>
+      <dd>
+        표시될 만큼 충분히 채팅하지 않았어요
+      </dd>
+    </div>
+  </dl>
+
+  <!-- 사용자 활동내역 -->
+  <div class="user-activity">
+    <div class="user-activity__item">
+      <a href="" class="user-activity__text">활동배지 10개</a>
+      <img src="../images/profile/direction.png" alt="오른쪽 방향의 화살표" class="user-activity__arrow" />
+    </div>
+    <div class="user-activity__item goods">
+      <a href="" class="user-activity__text">판매상품 3개</a>
+      <img src="../images/profile/direction.png" alt="오른쪽 방향의 화살표" class="user-activity__arrow" />
+    </div>
+    <div class="user-activity__item">
+      <a href="" class="user-activity__text">받은 매너 평가</a>
+      <img src="../images/profile/direction.png" alt="오른쪽 방향의 화살표" class="user-activity__arrow" />
+    </div>
+
+    <!-- 매너 평가 chat -->
+    <div class="user-activity__evaluation">
+      <div class="user-activity__review">
+        <img src="../images/profile/people.png" alt="사람 모양의 아이콘" class="user-activity__review__img" />
+        <span class="user-activity__review__number">10</span>
+        <div class="user-activity__review__chat first_chat">
+          <span class="user-activity__review__text">시간 약속을 잘 지켜요.</span>
+        </div>
+      </div>
+      <div class="user-activity__review">
+        <img src="../images/profile/people.png" alt="사람 모양의 아이콘" class="user-activity__review__img" />
+        <span class="user-activity__review__number">9</span>
+        <div class="user-activity__review__chat">
+          <span class="user-activity__review__text">친절하고 매너가 좋아요</span>
+        </div>
+      </div>
+      <div class="user-activity__review">
+        <img src="../images/profile/people.png" alt="사람 모양의 아이콘" class="user-activity__review__img" />
+        <span class="user-activity__review__number">8</span>
+        <div class="user-activity__review__chat">
+          <span class="user-activity__review__text">제가 있는 곳까지 와서 거래했어요.</span>
+        </div>
+      </div>
+    </div>
+    <div class="user-activity__item received">
+      <a href="" class="user-activity__text">받은 거래 후기 1</a>
+      <img src="../images/profile/direction.png" alt="오른쪽 방향의 화살표" class="user-activity__arrow" />
+    </div>
+  </div>
+
+  <!-- 거래 후기 -->
+  <div class="trader">
+    <div class="trader__profile">
+      <a href="" class="trader__photo">
+        <img src="../images/profile/circle.png" alt="으갸갸갹 구매자 사진" class="trader__photo__img" />
+      </a>
+    </div>
+    <div class="trader__content">
+      <div class="trader__info">
+        <a href="" class="trader__info__name">으갸갸갹</a>
+        <h6 class="trader__info__history">구매자·인천광역시 계양구·4개월 전</h6>
+        <p class="trader__info__text">감사감사 감사합니다</p>
+      </div>
+      <img src="../images/profile/more.png" alt="" class="trader__info__more" />
+    </div>
+  </div>
+
+  <!-- 기타 옵션 리스트 -->
+  <ul class="link__list">
+    <li><a class="link__list__item" href="">보관질문</a></li>
+    <li><a class="link__list__item" href="">설정</a></li>
+    <li><a class="link__list__item" href="">지식 IN 공식 블로그</a></li>
+    <li><a class="link__list__item" href="">서비스 정보</a></li>
+    <li><a class="link__list__item" href="">공지사항</a></li>
+    <li><a class="link__list__item list-logout" href="">로그아웃 <span class="link__list__item-id">kimchichi</span></a></li>
+  </ul>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li><img src="./../../images/homebar/home.png" alt="" /><a class="nav__item" href="">홈</a></li>
+      <li><img src="./../../images/homebar/life.png" alt="" /><a class="nav__item" href="">게시판</a></li>
+      <li><img src="./../../images/homebar/map.png" alt="" /><a class="nav__item" href="">내 주변</a></li>
+      <li><img src="./../../images/homebar/chat.png" alt="" /><a class="nav__item" href="">채팅</a></li>
+      <li><img src="./../../images/homebar/my.png" alt="" /><a class="nav__item" href="">나의 이듬</a></li>
+    </ul>
+  </nav>
+
+</body>
+
+</html>
