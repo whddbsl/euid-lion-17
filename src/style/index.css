@@ -398,6 +398,172 @@ legend {
   display: block;
 }
 
+.exchangeBoard_img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.exchangeBoard_profile_wrap {
+  margin: 0.75rem 3.75% 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.exchangeBoard_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.exchangeBoard_profile_circle {
+  width: 40px;
+  height: 40px;
+  background: #919191;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.exchangeBoard_profile_txt {
+  display: flex;
+  flex-direction: column;
+}
+.exchangeBoard_profile_txt span:first-child {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.exchangeBoard_profile_txt span:last-child {
+  font-size: 0.625rem;
+}
+
+.exchangeBoard_manner_txt {
+  color: #919191;
+  font-size: 0.625rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.exchangeBoard_manner img {
+  vertical-align: middle;
+  width: 23px;
+  height: 24px;
+}
+.exchangeBoard_manner span {
+  color: #5A85EE;
+}
+
+.exchangeBoard_wirtter {
+  margin: 24px 3.75%;
+}
+.exchangeBoard_wirtter li:last-child {
+  width: 100%;
+  line-height: 160%;
+  font-size: 0.875rem;
+  height: 120px;
+}
+
+.exchangeBoard_wirtter_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.exchangeBoard_wirtter_subtitle {
+  font-size: 0.625rem;
+  color: #919191;
+  margin-bottom: 0.875rem;
+}
+
+.exchangeBoard_like_chat {
+  margin: 3.75%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+.exchangeBoard_like_chat li:first-child {
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 25px;
+}
+.exchangeBoard_like_chat li:nth-child(2) {
+  margin: 0 13px;
+  border-right: 1px solid #919191;
+}
+
+.exchangeBoard_like_chat_txt {
+  display: flex;
+  flex-direction: column;
+}
+.exchangeBoard_like_chat_txt span:first-child {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.exchangeBoard_like_chat_txt span:last-child {
+  color: #5A85EE;
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.exchangeBoard_like_chat_label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #5A85EE;
+  padding: 8px 14px;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+}
+.exchangeBoard_like_chat_label a {
+  display: block;
+}
+
+.exchangeBoard__list_wrap {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding: 0 3.75%;
+}
+.exchangeBoard__list_wrap h6 {
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.exchangeBoard__list_wrap ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.exchangeBoard__list_wrap ul li:nth-child(odd) {
+  margin-right: 1rem;
+}
+
+.exchangeBoard__list_img {
+  width: 138px;
+  height: 104px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  flex-grow: inherit;
+}
+
+.exchangeBoard__list_txt {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+.exchangeBoard__list_txt span:last-child {
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
 /* 헤더 */
 .board__header {
   display: flex;
