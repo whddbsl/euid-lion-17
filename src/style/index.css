@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -858,6 +858,96 @@ body {
   background-color: #373F67;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 2;
+}
+
+body {
+  margin-bottom: 69px;
+  position: relative;
+}
+
+.mainHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 6.25%;
+}
+.mainHeader h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.mainHeader__dropBtn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.mainHeader__dropBtn img {
+  width: 18px;
+  height: 18px;
+  margin-left: 0.375rem;
+}
+.mainHeader__tap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background: #373F67;
+  color: #9da1b4;
+  padding: 0.5rem 3.75%;
+  font-size: 0.875rem;
+}
+.mainHeader__tap li:nth-child(1) {
+  color: #FFFFFF;
+}
+
+.imgWrap {
+  background: #9DA1B4;
+  position: relative;
+  min-height: 13.375rem;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 45px;
+}
+.imgWrap__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 12.625rem;
+}
+.imgWrap__imgCaption {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 58px;
+  color: #FFFFFF;
+}
+.imgWrap__imgCaption .captionWrap {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2px;
+  width: 46.25%;
+}
+.imgWrap__imgCaption__order {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.625rem;
+  line-height: 150%;
+}
+.imgWrap__imgCaptionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+.imgWrap__imgCationMore {
+  font-size: 0.625rem;
+  line-height: 160%;
 }
 
 /*# sourceMappingURL=index.css.map */
