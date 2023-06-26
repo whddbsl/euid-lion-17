@@ -407,6 +407,7 @@ legend {
   margin: 0.75rem 3.75% 0;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .exchangeBoard_profile {
@@ -439,6 +440,9 @@ legend {
 .exchangeBoard_manner_txt {
   color: #919191;
   font-size: 0.625rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .exchangeBoard_manner img {
