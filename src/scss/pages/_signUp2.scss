@@ -33,13 +33,14 @@
       @include paddingY(8px);
       @include paddingX(12px);
       font-size: rem(14px);
+      color: $contentPrimary;
     }
 
     &Send{
         border: 0.5px solid $contentSecondary;
         @include paddingY(8px);
         background: $white;
-        color: $contentSecondary;
+        color: $contentPrimary;
         font-size: rem(14px);
         font-weight: 600;
     }
