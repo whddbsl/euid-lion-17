@@ -36,7 +36,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: rem(16px);
+  column-gap: rem(8px);
+  row-gap: rem(16px);
 }
 
 .button {
@@ -97,9 +98,11 @@ footer{
 }
 
 .saveBtn{
-    text-align: center;
-    width: rem(302px);
-    height: rem(36px);
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    @include paddingX(100px);
+    @include paddingY(8px);
     border-radius: rem(8px);
     border: none;
     background: $primary-color;

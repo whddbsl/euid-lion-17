@@ -436,7 +436,8 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
 }
 
 .button {
@@ -500,9 +501,13 @@ footer {
 }
 
 .saveBtn {
-  text-align: center;
-  width: 18.875rem;
-  height: 2.25rem;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.5rem;
   border: none;
   background: #373F67;
