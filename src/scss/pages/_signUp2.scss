@@ -1,11 +1,11 @@
 @use "./../utils" as *;
 @use "./../base/" as *;
 
-.signUpHeader {
+.signUp2Header {
   margin-top: rem(37px);
 }
 
-.signUpMain {
+.signUp2Main {
   &__info {
     padding: rem(12px) rem(62px) rem(12px) rem(12px);
     font-size: rem(18px);
@@ -54,12 +54,4 @@
             text-decoration: underline;
         }
     }
-}
-
-.signUpKeyboard{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    object-fit: cover;
-    // height: 129px;
 }
