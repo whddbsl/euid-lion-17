@@ -6,7 +6,6 @@
 }
 
 .signUpMain {
-    position: absolute;
   &__info {
     padding: rem(12px) rem(62px) rem(12px) rem(12px);
     font-size: rem(18px);
@@ -59,4 +58,7 @@
 .signUpKeyboard{
     position: fixed;
     bottom: 0;
+    width: 100%;
+    // height: 291px;
+    object-fit: cover;
 }
