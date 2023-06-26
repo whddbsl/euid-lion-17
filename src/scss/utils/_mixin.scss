@@ -19,6 +19,12 @@
   right: $r;
 }
 
+@mixin posRightBottom($r: 0, $b: 0) {
+  @include pos;
+  right: $r;
+  bottom: $b;
+}
+
 @mixin posCenterX {
   @include pos;
   left: 50%;
