@@ -1,0 +1,18 @@
+@use "./../utils" as *;
+
+// floating btn
+@mixin floating {
+  width: 52px;
+  height: 52px;
+  border: none;
+  background: $primary-color;
+  border-radius: 50%;
+  box-shadow: 4px 4px 6px rgba($color: #000000, $alpha: 25%);
+  position: fixed;
+  right: 3.75%;
+  bottom: 81px;
+  z-index: 3;
+  display: flex;
+  align-items :center;
+  justify-content: center;
+}
