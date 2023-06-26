@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="엔터이듬(EnterEUID)" />
+  <meta name="keywords" content="멋사,이듬,EUID,마켓,프론트" />
+  <meta name="author" content="EUID-17"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./../src/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./../css/main.css" />
+  <link rel="stylesheet" href=" ./../style/index.css">
+  <meta property="og:title" content="엔터이듬(EnterEUID) - 게시판"/>
+  <meta property="og:description" content="당신 곁의 엔터이듬 마켓"/>
+  <meta property="og:image" content="./../src/images/og-image.png"/>
+  <meta property="og:image:alt" content="엔터이듬 로고"/>
+  <title>엔터이듬 - 게시판</title>
+</head>
+<body>
+  <nav class="nav">
+    <ul class="nav__list">
+        <li><img src="./../../images/homebar/home.png" alt="" /><a class="nav__item" href="">홈</a></li>
+        <li><img src="./../../images/homebar/life.png" alt="" /><a class="nav__item" href="">게시판</a></li>
+        <li><img src="./../../images/homebar/map.png" alt="" /><a class="nav__item" href="">내 주변</a></li>
+        <li><img src="./../../images/homebar/chat.png" alt="" /><a class="nav__item" href="">채팅</a></li>
+        <li><img src="./../../images/homebar/my.png" alt="" /><a class="nav__item" href="">나의 이듬</a></li>
+    </ul>
+  </nav>
+  <header class="board__header">
+    <div tabindex="0">
+      <h2>남가좌제2동</h2>
+      <img src="./../images/header/direction_bottom.png" alt="더보기" />
+    </div>
+    <span>
+      <img src="./../images/header/search.png" alt="검색" tabindex="0"/>
+      <img src="./../images/header/hamburger.png" alt="메뉴" tabindex="0"/>
+      <img src="./../images/header/alramBell.png" alt="알림" tabindex="0"/>
+    </span>
+  </header>
+  <div class="board__subject">
+    <button class="subject__button"><span class="icon__hamburger" aria-hidden="true"></span>주제</button>
+    <button class="subject__button">인기글</button>
+    <button class="subject__button">같이해요</button>
+    <button class="subject__button">질의응답</button>
+    <button class="subject__button">자유게시판</button>
+  </div>
+  <main>
+    <article class="board__article">
+      <div class="board__left">
+        <span class="board__label">같이해요</span>
+        <h3><a href="#">youtube 클론 프젝 같이 하실분~!</a></h3>
+        <p class="">
+          <span class="icon__fullpeople" aria-hidden="true"></span>
+          누구나 참여가능
+        </p>
+        <p>
+          <span class="icon__calender" aria-hidden="true"></span>
+          내일, 오후 7:00
+        </p>
+        <p>응암제 3동 &#8226; 9분 전 </p>
+      </div>
+      <p class="board__count">
+        <span class="icon__people" aria-hidden="true"></span>
+        1/3명
+      </p>
+    </article>
+
+    <article class="board__article">
+      <div class="board__left">
+        <span class="board__label">질의응답</span>
+        <h3><a href="#">아니 디버깅 돌려봤는데도 왜 이렇게 나오는거죠 대체</a></h3>
+        <p>내가 혼자 게임 만들려고 코드 짰는ㄷ ㅔ 왜 이런거야 도대체 알수가없네 수가없네수가없네수가없네수가없네수가없네수가없네수가없네수가없네수가없네수가없네수가없네</p>
+        <p>연희동 &#8226; 49분 전 &#8226; 조회 4</p>
+        <img src="./../images/board/thumbnail.png" alt="미리보기 사진" />
+      </div>
+    </article>
+
+    <article class="board__article">
+      <div class="board__left">
+        <span class="board__label">질의응답</span>
+        <h3><a href="#">깊은 복사 얕은 복사의 차이를 모르겠어요</a></h3>
+        <p>제가 이해한 내용은 얕은 복사는 메모리를 공유하고 깊은 복사는 뭐였더라 힙 큐 어쩌고 배운지 한달넘어서 기억이 안나네</p>
+        <p>남가좌동 &#8226; 15분 전 &#8226; 조회 12</p>
+      </div>
+    </article>
+
+    <article class="board__article">
+      <div class="board__left">
+        <span class="board__label">질의응답</span>
+        <h3><a href="#">CSS flex 중앙정렬 justify-content에서 뭐 줘야해요?</a></h3>
+        <p>figma보고 코드 짰는데 기억이 안나네;;;;</p>
+        <p>남가좌제2동 &#8226; 1일 전 &#8226; 조회 13</p>
+      </div>
+    </article>
+
+    <article class="board__article">
+      <div class="board__left">
+        <span class="board__label">자유게시판</span>
+        <h3><a href="#">오늘 점심 뭐먹? 점메추~~~</a></h3>
+        <p>코드 공부하다 연희동 근처에서 밥먹을건데 밥은 님이 사주셔야합니다</p>
+        <p>연희동 &#8226; 49분 전 &#8226; 조회 4</p>
+        <img src="./../images/board/thumbnail.png" alt="미리보기 사진" />
+      </div>
+    </article>
+
+    <article class="board__article">
+      <div class="board__left">
+        <span class="board__label">자유게시판</span>
+        <h3><a href="#">오늘 점심 뭐먹? 점메추~~~</a></h3>
+        <p>코드 공부하다 연희동 근처에서 밥먹을건데 밥은 님이 사주셔야합니다</p>
+        <p>연희동 &#8226; 49분 전 &#8226; 조회 4</p>
+        <img src="./../images/board/thumbnail.png" alt="미리보기 사진" />
+      </div>
+    </article>
+
+  </main>
+</body>
+</html>
