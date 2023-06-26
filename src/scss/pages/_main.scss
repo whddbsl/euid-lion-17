@@ -43,6 +43,13 @@ body {
   padding-top: rem(20px);
   padding-left: rem(20px);
   padding-bottom: rem(45px);
+  
+  & .captionWrap {
+        @include flexbox($direction: column);
+        gap: rem(2px);
+        width: 46.25%;
+  }
+
   &__img {
     position: absolute;
     bottom: 0;
@@ -55,24 +62,12 @@ body {
     gap: rem(58px);
     color: $white;
 
-    & .captionWrap {
-      @include flexbox($direction: column);
-      gap: rem(2px);
-      width: 46.25%;
-    }
-
     &__order {
       @include flexbox($items: center);
       gap: rem(5px);
       font-size: rem(10px);
       line-height: 150%;
     }
-  }
-
-  &__imgCaptionTitle {
-    font-size: rem(18px);
-    font-weight: 600;
-    line-height: 150%;
   }
 
   &__imgCationMore {
@@ -119,3 +114,4 @@ body {
     }
   }
 }
+
