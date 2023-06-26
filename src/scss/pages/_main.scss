@@ -37,46 +37,86 @@ body {
 }
 
 .imgWrap {
-    background: $contentTertiary;
-    position: relative;
-    min-height: rem(214px);
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 45px;
-    &__img{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        min-width: rem(202px);
+  background: $contentTertiary;
+  position: relative;
+  min-height: rem(214px);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 45px;
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: rem(202px);
+  }
+
+  &__imgCaption {
+    @include flexbox($direction: column);
+    gap: 58px;
+    color: $white;
+
+    & .captionWrap {
+      @include flexbox($direction: column);
+      gap: 2px;
+      width: 46.25%;
     }
 
-    &__imgCaption{
-        @include flexbox($direction:column);
-        gap: 58px;
-        color: $white;
-
-        & .captionWrap{
-            @include flexbox($direction: column);
-            gap: 2px;
-            width: 46.25%;
-        }
-
-        &__order{
-            @include flexbox($items:center);
-            gap: 5px;
-            font-size: rem(10px);
-            line-height: 150%;
-        }
-    }
-
-    &__imgCaptionTitle{
-        font-size: rem(18px);
-        font-weight: 600;
-        line-height: 150%;
-    }
-
-    &__imgCationMore{
-        font-size: rem(10px);
-        line-height: 160%;
+    &__order {
+      @include flexbox($items: center);
+      gap: 5px;
+      font-size: rem(10px);
+      line-height: 150%;
     }
   }
+
+  &__imgCaptionTitle {
+    font-size: rem(18px);
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__imgCationMore {
+    font-size: rem(10px);
+    line-height: 160%;
+  }
+}
+
+.mainSection {
+  @include flexbox($wrap: wrap, $justify: space-around);
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.mainSection__article {
+  width: 138px;
+
+  & .article__img {
+    width: 138px;
+    height: 104px;
+    border-radius: 8px;
+    background: $contentSecondary;
+    margin-bottom: 12px;
+  }
+
+  & .article__title {
+    font-size: rem(10px);
+    line-height: 160%;
+    margin-bottom: 4px;
+  }
+
+  & .article__category {
+    font-size: 10px;
+    color: $contentSecondary;
+    line-height: 160%;
+  }
+
+  & .article__writer{
+    margin-left: 6px;
+  }
+
+  & .article__writer::before{
+    content: '';
+    border-right: 1px solid $contentSecondary;
+    margin-right: 6px;
+  }
+}
