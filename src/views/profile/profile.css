@@ -36,7 +36,7 @@ body {
  box-shadow: 0 4px 4px #ccc; 
  position: absolute;
 }
-/* 프로필 아이다 */
+/* 프로필 아이디 */
 .user-profile__id{
   margin:0;
   font-size:18px;
