@@ -407,7 +407,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   padding: 0.625rem 6.25%;
 }
 .exchange_header_wrap h3 {
@@ -428,6 +428,7 @@ body {
 }
 
 .exchange_wrap_menubtn a {
+  display: inline-block;
   vertical-align: middle;
 }
 
@@ -480,7 +481,7 @@ body {
   font-weight: 400;
 }
 .exchange_float_btn__list li {
-  width: 108px;
+  width: 120px;
   height: 42px;
   background: #373F67;
   border-radius: 12px;
@@ -491,7 +492,7 @@ body {
 }
 .exchange_float_btn__list li img {
   margin-right: 4px;
-  vertical-align: center;
+  vertical-align: middle;
 }
 .exchange_float_btn__list li:last-child {
   margin-bottom: 12px;

@@ -8,7 +8,7 @@ body {
 // 헤더영역
 .exchange_header_wrap {
   @include flexbox
-  ($justify: space-between);
+  ($justify: space-between, $items:center);
   padding: rem(10px) 6.25%;
   & h3 {
     font-size: rem(20px);
@@ -27,6 +27,7 @@ body {
 
 .exchange_wrap_menubtn {
   & a {
+    display: inline-block;
     vertical-align: middle;
   }
 }
@@ -86,7 +87,7 @@ body {
   font-size: rem(14px);
   font-weight: 400;
   & li {
-    width: 108px;
+    width: 120px;
     height: 42px;
     background: $primary-color;
     border-radius: 12px;
@@ -96,7 +97,7 @@ body {
     margin-bottom: 4px;
     & img {
       margin-right: 4px;
-      vertical-align: center;
+      vertical-align: middle;
     }
   }
   & li:last-child{
