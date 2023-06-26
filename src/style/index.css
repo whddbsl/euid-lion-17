@@ -335,7 +335,6 @@ a {
 
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font: inherit;
   background-color: #fff;
   overflow-y: scroll;
   position: relative;
@@ -378,6 +377,7 @@ legend {
   align-items: stretch;
   padding: 0.5rem 3.75% 1.5rem;
   font-size: 0.625rem;
+  background: #FFFFFF;
   height: 70px;
   position: fixed;
   bottom: 0;
