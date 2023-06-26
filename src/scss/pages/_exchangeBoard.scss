@@ -86,7 +86,7 @@
   flex-direction: row;
   position: relative;
   padding-bottom: rem(40px);
-  border-bottom: 1px solid $contentSecondary;
+  // border-bottom: 1px solid $contentSecondary;
   & li:first-child {
     vertical-align: middle;
     margin-top: auto;
@@ -125,5 +125,48 @@
   right: 0;
   & a {
     display: block;
+  }
+}
+
+// 하단 리스트영역
+.exchangeBoard__list_wrap {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding : 0 3.75%;
+  & h6 {
+    margin-top: rem(20px);
+    margin-bottom: rem(16px);
+    font-size: rem(14px);
+    font-weight: 600;
+  }
+  & ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: space-around;
+    & li:nth-child(odd) {
+      margin-right: rem(16px);
+    }
+  }
+}
+
+.exchangeBoard__list_img {
+  width: 138px;
+  height: 104px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: rem(12px);
+  flex-grow: inherit;
+}
+
+.exchangeBoard__list_txt {
+  display: flex;
+  flex-direction: column;
+  font-size: rem(10px);
+  margin-bottom: rem(20px);
+  & span:last-child {
+    font-weight: 600;
+    margin-top: rem(4px);
   }
 }
