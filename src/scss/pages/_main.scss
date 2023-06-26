@@ -18,8 +18,8 @@ body {
   &__dropBtn {
     @include flexbox;
     & img {
-      width: 18px;
-      height: 18px;
+      width: rem(18px);
+      height: rem(18px);
       margin-left: rem(6px);
     }
   }
@@ -40,9 +40,9 @@ body {
   background: $contentTertiary;
   position: relative;
   min-height: rem(214px);
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 45px;
+  padding-top: rem(20px);
+  padding-left: rem(20px);
+  padding-bottom: rem(45px);
   &__img {
     position: absolute;
     bottom: 0;
@@ -52,18 +52,18 @@ body {
 
   &__imgCaption {
     @include flexbox($direction: column);
-    gap: 58px;
+    gap: rem(58px);
     color: $white;
 
     & .captionWrap {
       @include flexbox($direction: column);
-      gap: 2px;
+      gap: rem(2px);
       width: 46.25%;
     }
 
     &__order {
       @include flexbox($items: center);
-      gap: 5px;
+      gap: rem(5px);
       font-size: rem(10px);
       line-height: 150%;
     }
@@ -83,40 +83,39 @@ body {
 
 .mainSection {
   @include flexbox($wrap: wrap, $justify: space-around);
-  gap: 12px;
-  padding: 12px 16px;
+  gap: rem(12px);
+  padding: rem(12px) rem(16px);
 }
 
 .mainSection__article {
-  width: 138px;
+  width: rem(138px);
 
   & .article__img {
-    width: 138px;
-    height: 104px;
-    border-radius: 8px;
+    width: rem(138px);
+    height: rem(104px);
+    border-radius: rem(8px);
     background: $contentSecondary;
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
   }
 
   & .article__title {
     font-size: rem(10px);
     line-height: 160%;
-    margin-bottom: 4px;
+    margin-bottom: rem(4px);
   }
 
   & .article__category {
-    font-size: 10px;
+    font-size: rem(10px);
     color: $contentSecondary;
     line-height: 160%;
   }
 
-  & .article__writer{
-    margin-left: 6px;
-  }
-
-  & .article__writer::before{
-    content: '';
-    border-right: 1px solid $contentSecondary;
-    margin-right: 6px;
+  & .article__writer {
+    margin-left: rem(6px);
+    &::before {
+      content: "";
+      border-right: rem(1px) solid $contentSecondary;
+      margin-right: rem(6px);
+    }
   }
 }
