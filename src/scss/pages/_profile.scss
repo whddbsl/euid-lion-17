@@ -46,7 +46,7 @@
   border: 1px solid;
   border-radius: 40%;
   font-size: 0.1px;
-  color:#5A85EE;
+  color: $secondary-color;
   text-align:center;
   padding:0.5px;
   margin-left:6px;
@@ -55,7 +55,7 @@
 .user-profile__status{
   margin: 0;
   font-size:10px;
-  color:#919191;
+  color:$contentSecondary;
 }
 /* 프로필 리스트 */
 .user-porofile__list{
@@ -117,7 +117,7 @@ font-size: 11px;
 }
 
 .temperature__status__degree{
-  color: #5A85EE;
+  color: $secondary-color;
   font-size: 15px;
   position: absolute;
   transform: translate(225px,-2px); 
@@ -127,7 +127,7 @@ font-size: 11px;
   position: absolute;
   transform: translateX(75px);
   font-size: 10px;
-  color:#919191;
+  color: $contentSecondary;
 }
 
 .temperature__status__item__img{
@@ -160,7 +160,6 @@ font-size: 11px;
 .user-feedback_like{
  width: 103px;
  height: 39px;
- font-size: ;
 }
 
 .user-feedback_like dt{
@@ -245,7 +244,7 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #719CF7;
+  background-color: $tertiary;
   border-radius: 0 5px 5px;
   margin-left: 15px;
   padding:0 7px;
@@ -263,6 +262,7 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 /* 거래 후기  */
 .trader {
   display: flex;
+  justify-content: space-between;
   padding: 10px 14px 20px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -272,16 +272,16 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 28px;
 }
 
-.trader__content{
+.trader__profile{
   display: flex;
-  justify-content:space-between;
+  flex-flow: wrap;
 }
 
 .trader__info__more{
   display: block;
   width: 20px;
   height: 20px;
-  padding-left:60px;
+  padding-right:25px;
 }
 .trader__info{ 
   display: flex;
@@ -335,5 +335,5 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .link__list__item-id{
-  color: #5A85EE;
+  color: $secondary-color;
 }
