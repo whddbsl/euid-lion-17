@@ -1,6 +1,9 @@
 @use "./../utils" as *;
 @use "./../base" as *;
 
+body {
+  margin: 0;
+}
 /* 프로필  */
 .user{
   display: flex;
