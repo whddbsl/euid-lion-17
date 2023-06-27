@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="엔터이듬(EnterEUID)" />
+  <meta name="keywords" content="멋사,이듬,EUID,마켓,프론트" />
+  <meta name="author" content="EUID-17"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./../src/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./../style/index.css" />
+  <meta property="og:title" content="엔터이듬(EnterEUID)"/>
+  <meta property="og:description" content="당신 곁의 엔터이듬 마켓"/>
+  <meta property="og:image" content="./../src/images/og-image.png"/>
+  <meta property="og:image:alt" content="엔터이듬 로고"/>
+  <title>엔터이듬 - 글 작성</title>
+</head>
+<body>
+  <header class="writeboard__header">
+    <img src="./../images/board/direction_left.png" alt="뒤로 가기" tabindex="0"/>
+  </header>
+  <main class="writeboard2">
+    <div class="writeboard">
+      <input type="text" class="writeboard__input" placeholder="이웃과 어떤 활동을 할까요" value="EUID 피그마 스터디 하실분!"/>
+    </div>
+
+    <div class="writeboard__category">
+      <span>카테고리를 선택해주세요</span>
+      <img src="./../images/board/down.png" alt="선택" tabindex="0"/>
+    </div>
+
+    <div class="writeboard__article">
+      <input type="text" placeholder="활동 내용을 입력해주세요." />
+    </div>
+
+    <ul class="writeboard__options">
+      <li><div><img src="./../images/searchActicities/people.png" alt="인원" />인원</div>
+        <div>
+          <img src="./../images/searchActicities/minus.png" class="writeboard__plusminus" alt="줄이기" tabindex="0"/>
+          <span>4명</span>
+          <img src="./../images/searchActicities/plus.png" class="writeboard__plusminus" alt="늘리기" tabindex="0"/>
+        </div>
+      </li>
+      <li><div><img src="./../images/searchActicities/calender.png" alt="날짜" />날짜</div><div tabindex="0">오늘</div></li>
+      <li><div><img src="./../images/searchActicities/time.png" alt="시간" />시간</div><div tabindex="0">오후 8:00</div></li>
+      <li><div><img src="./../images/searchActicities/map.png" alt="장소" />장소</div><div><input type="text" placeholder="입력해주세요"/></div></li>
+    </ul>
+
+    <button class="writeboard__button">다음</button>
+  </main>
+</body>
+</html>
