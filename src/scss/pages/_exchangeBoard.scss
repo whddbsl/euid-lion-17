@@ -1,0 +1,176 @@
+@use "./../utils" as *;
+
+.exchangeBoard_img {
+  width: 100%;
+  // height: 284px;
+  object-fit: cover;
+}
+
+// 프로필 영역
+.exchangeBoard_profile_wrap {
+  margin: rem(12px) 3.75% 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.exchangeBoard_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.exchangeBoard_profile_circle {
+  width: 40px;
+  height: 40px;
+  background: $contentSecondary;
+  border-radius: 50%;
+  margin-right: rem(8px);
+}
+
+.exchangeBoard_profile_txt {
+  display: flex;
+  flex-direction: column;
+  & span:first-child {
+    font-size: rem(14px);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  & span:last-child {
+    font-size: rem(10px);
+  }
+}
+
+.exchangeBoard_manner_txt {
+  color: $contentSecondary;
+  font-size: rem(10px);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.exchangeBoard_manner {
+  & img {
+    vertical-align: middle;
+    width: 23px;
+    height: 24px;
+  }
+  & span {
+    color: $secondary-color;
+  }
+}
+
+// 텍스트 영역
+.exchangeBoard_wirtter {
+  margin: 24px 3.75%;
+  & li:last-child {
+    width: 100%;
+    line-height: 160%;
+    font-size: rem(14px);
+    height: 120px;
+  }
+}
+
+.exchangeBoard_wirtter_title {
+  font-size: rem(20px);
+  font-weight: 600;
+  margin-bottom: rem(4px);
+}
+
+.exchangeBoard_wirtter_subtitle {
+  font-size: rem(10px);
+  color: $contentSecondary;
+  margin-bottom: rem(14px);
+}
+
+// 좋아요, 채팅하기 영역
+.exchangeBoard_like_chat {
+  margin: 3.75%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: rem(40px);
+  // border-bottom: 1px solid $contentSecondary;
+  & li:first-child {
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 25px;
+  }
+  & li:nth-child(2) {
+    margin: 0 13px;
+    border-right: 1px solid $contentSecondary;
+  }
+}
+
+.exchangeBoard_like_chat_txt {
+  display: flex;
+  flex-direction: column;
+  & span:first-child {
+    font-size: rem(14px);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  & span:last-child {
+    color: $secondary-color;
+    font-size: rem(10px);
+    font-weight: 600;
+  }
+}
+
+.exchangeBoard_like_chat_label {
+  font-size: rem(14px);
+  font-weight: 600;
+  color: $background;
+  background: $secondary-color;
+  padding: 8px 14px;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  & a {
+    display: block;
+  }
+}
+
+// 하단 리스트영역
+.exchangeBoard__list_wrap {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding : 0 3.75%;
+  & h6 {
+    margin-top: rem(20px);
+    margin-bottom: rem(16px);
+    font-size: rem(14px);
+    font-weight: 600;
+  }
+  & ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: space-around;
+    & li:nth-child(odd) {
+      margin-right: rem(16px);
+    }
+  }
+}
+
+.exchangeBoard__list_img {
+  width: 138px;
+  height: 104px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: rem(12px);
+  flex-grow: inherit;
+}
+
+.exchangeBoard__list_txt {
+  display: flex;
+  flex-direction: column;
+  font-size: rem(10px);
+  margin-bottom: rem(20px);
+  & span:last-child {
+    font-weight: 600;
+    margin-top: rem(4px);
+  }
+}
