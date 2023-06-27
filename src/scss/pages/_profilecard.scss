@@ -1,6 +1,7 @@
 @use "./../utils" as *;
 
 /* 프로필 수정 */
+
 .user-edit {
   display: flex;
   justify-content: space-between;
@@ -161,7 +162,7 @@
  color: $contentPrimary;
  font-weight: 700;
 }
-s
+
 /* 추가 정보 리스트 */
 
 .profilecard__add{

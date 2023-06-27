@@ -1,196 +1,204 @@
 @use "./../utils" as *;
 
 /* 프로필  */
-.user{
+.user {
   display: flex;
   flex-flow: column wrap;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
+
 .user-profile {
   width: rem(101px);
-  height: rem(120px);  
+  height: rem(120px);
   margin-top: rem(42px);
   display: flex;
   flex-flow: wrap;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
+
 /* 프로필 사진 */
-.user-porofile__photo{
+.user-porofile__photo {
   width: rem(68px);
   height: rem(66px);
   border-radius: 50%;
   box-shadow: 0 0 4px 4px #ccc;
 }
+
 /* 프로필 수정 연필모양 */
-.user-porofile__edit-link{
+.user-porofile__edit-link {
   position: relative;
   top: 15px;
   right: 20px;
 }
-.user-porofile__edit-img{
- background-color: $background;
- border-radius: 50%;
- box-shadow: 0 4px 4px #ccc; 
- position: absolute;
+
+.user-porofile__edit-img {
+  background-color: $background;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px #ccc;
+  position: absolute;
 }
+
 /* 프로필 아이디 */
-.user-profile__id{
-  margin:0;
+.user-profile__id {
+  margin: 0;
   font-size: rem(18px);
 }
 
-.user-profile__id-number{
+.user-profile__id-number {
   border: 1px solid;
   border-radius: 40%;
   font-size: 0.1px;
   color: $secondary-color;
-  text-align:center;
-  padding:0.5px;
+  text-align: center;
+  padding: 0.5px;
   margin-left: 6px;
 }
 
-.user-profile__status{
+.user-profile__status {
   margin: 0;
-  font-size:10px;
-  color:$contentSecondary;
-}
-/* 프로필 리스트 */
-.user-porofile__list{
- padding: 0;
- display: flex;
- list-style-type: none;
- gap:30px;
+  font-size: 10px;
+  color: $contentSecondary;
 }
 
-.user-porofile__list__group{
+/* 프로필 리스트 */
+.user-porofile__list {
   padding: 0;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  list-style-type: none;
+  gap: 30px;
+  &__group {
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.user-porofile__list-img{
-display: block;
-padding-bottom: 6px;
+.user-porofile__list-img {
+  display: block;
+  padding-bottom: 6px;
 }
 
-.user-porofile__list-item{
-display: block; 
-text-decoration-line: none;
-color: black;    
-font-size: rem(12px);
-font-weight: 700;
+.user-porofile__list-item {
+  display: block;
+  text-decoration-line: none;
+  color: black;
+  font-size: rem(12px);
+  font-weight: 700;
 }
 
 /* 열정온도  */
-.temperature{
-padding: rem(12px);
+.temperature {
+  padding: rem(12px);
 
 }
+
 /* 열정온도 제목 */
-.temperature{
+.temperature {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
-.temperature__text{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.temperature__text__title {
+  font-size: rem(11px);
 }
 
-.temperature__text__title{
-font-size: rem(11px);
-}
-
-.temperature__text__img{
+.temperature__text__img {
   padding-left: rem(2px);
 }
 
-.temperature__status{
+.temperature__status {
   position: relative;
 }
 
-.temperature__status__degree{
+.temperature__status__degree {
   color: $secondary-color;
   font-size: rem(15px);
   position: absolute;
-  transform: translate(225px,-2px); 
+  transform: translate(225px, -2px);
 }
 
-.temperature__status__item__text{
+.temperature__status__item__text {
   position: absolute;
   transform: translateX(75px);
   font-size: rem(10px);
   color: $contentSecondary;
 }
 
-.temperature__status__item__img{
+.temperature__status__item__img {
   padding-left: 100px;
 }
 
-.temperature__progress{
--webkit-appearance: none;
+.temperature__progress {
+  -webkit-appearance: none;
 }
 
 .temperature__progress::-webkit-progress-bar {
   background-color: grey;
   border-radius: rem(10px);
-  width: 296px; 
+  width: 296px;
   height: 8px;
 }
 
 .temperature__progress::-webkit-progress-value {
   background-color: $primary-color;
-  border-radius:10px;
+  border-radius: 10px;
 }
+
 /* 좋아요와 응답률 */
-.user-feedback{
+.user-feedback {
   margin: 0;
   padding: 20px 16px;
   display: flex;
   justify-content: space-around;
 }
 
-.user-feedback_like{
- width: 103px;
- height: 39px;
+.user-feedback_like {
+  width: 103px;
+  height: 39px;
 }
 
-.user-feedback_like dt{
+.user-feedback_like dt {
   font-size: 10px;
   font-weight: 700;
 }
 
-.user-feedback_like dd{
+.user-feedback_like dd {
   margin: 0;
   font-size: 10px;
   padding-top: 5px;
   padding-left: 10px;
 }
 
-.user-feedback_response{
+.user-feedback_response {
   width: 141px;
   height: 39px;
 }
 
-.user-feedback_response dt{
+.user-feedback_response dt {
   font-size: 10px;
   font-weight: 700;
 }
 
-.user-feedback_response dd{
+.user-feedback_response dd {
   margin: 0;
   font-size: 10px;
   padding-top: 5px;
   padding-left: 10px;
 }
+
 /* 사용자 활동내역 */
-.user-activity__item{
+.user-activity__item {
   height: 33px;
   display: flex;
   justify-content: space-between;
@@ -199,7 +207,7 @@ font-size: rem(11px);
   font-size: 15px;
 }
 
-.user-activity__text{
+.user-activity__text {
   display: block;
   text-decoration-line: none;
   color: #000;
@@ -207,38 +215,40 @@ font-size: rem(11px);
 }
 
 /* 리스트 중 판매상품 border주기 위함 */
-.goods , .received{
-border-top: 1px solid rgba(0, 0, 0, 0.1);
-border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.goods,
+.received {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.user-activity__arrow{
+.user-activity__arrow {
   width: 16px;
   height: 16px;
   margin: 20px;
 }
+
 /* 매너평가 chaat */
-.user-activity__evaluation{
+.user-activity__evaluation {
   padding: 14px 60px 14px 10px;
 }
 
-.user-activity__review{
+.user-activity__review {
   display: flex;
   margin-bottom: 12px;
   margin-bottom: 12px;
 }
 
-.user-activity__review__img{
+.user-activity__review__img {
   width: 16px;
   height: 16px;
 }
 
-.user-activity__review__number{
+.user-activity__review__number {
   font-weight: 700;
   margin-left: 3px;
 }
 
-.user-activity__review__chat{
+.user-activity__review__chat {
   height: 38px;
   display: flex;
   justify-content: center;
@@ -246,14 +256,14 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $tertiary;
   border-radius: 0 5px 5px;
   margin-left: rem(15px);
-  padding:0 7px;
+  padding: 0 7px;
 }
 
 .first_chat {
   margin-left: rem(5px);
 }
 
-.user-activity__review__text{
+.user-activity__review__text {
   font-size: rem(11px);
   font-weight: 700;
 }
@@ -266,29 +276,30 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.trader__photo__img{
+.trader__photo__img {
   height: 28px;
   width: 28px;
 }
 
-.trader__profile{
+.trader__profile {
   display: flex;
   flex-flow: wrap;
 }
 
-.trader__info__more{
+.trader__info__more {
   display: block;
   width: 20px;
   height: 20px;
   padding-right: rem(25px);
 }
-.trader__info{ 
+
+.trader__info {
   display: flex;
   flex-flow: column;
-  margin-left:9px;
+  margin-left: 9px;
 }
 
-.trader__info__name{
+.trader__info__name {
   font-size: rem(10px);
   font-weight: 700;
   text-decoration-line: none;
@@ -296,19 +307,20 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 2px;
 }
 
-.trader__info__history{
+.trader__info__history {
   font-size: rem(10px);
-  color:$contentSecondary;
-  margin:0;
+  color: $contentSecondary;
+  margin: 0;
   padding-top: 2px;
 }
 
-.trader__info__text{
+.trader__info__text {
   font-size: rem(12px);
   font-weight: 700;
   margin: 0;
   padding-top: 5px;
 }
+
 /* 기타 옵션 리스트 */
 .link__list {
   list-style-type: none;
@@ -321,18 +333,18 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   justify-content: space-around;
 }
 
-.link__list__item{
+.link__list__item {
   text-decoration-line: none;
   color: $contentPrimary;
   margin-bottom: rem(18px);
 }
 
 /* 로그아웃 아이디 부분 */
-.list-logout{
- display: flex;
- justify-content: space-between;
+.list-logout {
+  display: flex;
+  justify-content: space-between;
 }
 
-.link__list__item-id{
+.link__list__item-id {
   color: $secondary-color;
 }
