@@ -1,0 +1,74 @@
+@use "./../utils" as *;
+@use "./../base/" as *;
+
+.signUp3Header {
+  margin-top: rem(37px);
+  margin-left: rem(12px);
+  height: rem(36px);
+}
+
+.signUp3Main {
+  &__phone {
+    @include flexbox(column);
+    margin: rem(3px) rem(10px) rem(6px) rem(12px);
+    gap: rem(13px);
+
+    &Number,
+    &Send, &Check {
+      border-radius: 4px;
+      line-height: 150%;
+      font-size: rem(14px);
+    }
+
+    &Number {
+      border: 0.5px solid $contentPrimary;
+      @include paddingY(8px);
+      @include paddingX(12px);
+      color: $contentSecondary;
+    }
+
+    &Send {
+      border: 0.5px solid $contentSecondary;
+      @include paddingY(8px);
+      background: $white;
+      font-weight: 600;
+    }
+    &Check {
+        @include paddingY(8px);
+      @include paddingX(12px);
+      border: 0.5px solid $contentPrimary;
+    }
+  }
+  &__start{
+    @include flexbox($direction:column);
+    margin-left: rem(12px);
+    margin-right: rem(12px);
+
+    &Warn{
+        font-size: rem(10px);
+        line-height: 160%;
+        color: $contentSecondary;
+    }
+
+    &Btn{
+        margin-top: rem(12px);
+        margin-bottom: rem(10px);
+        @include paddingY(12px);
+        border: none;
+        border-radius: 8px;
+        background: $contentSecondary;
+        color: $white;
+        font-size: rem(14px);
+        font-weight: 700;
+        line-height: 140%;
+    }
+
+    &No{
+        font-size: rem(10px);
+        line-height: 160%;
+        text-decoration: underline;
+        text-align: center;
+        color: $contentSecondary;
+    }
+}
+}
