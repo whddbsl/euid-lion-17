@@ -1,0 +1,58 @@
+@use "./../utils" as *;
+@use "./../base/" as *;
+
+.login2Header {
+  margin-top: rem(37px);
+  margin-left: rem(12px);
+}
+
+.login2Main {
+  &__info {
+    padding: rem(12px);
+    font-size: rem(18px);
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__infoMore {
+    font-size: rem(10px);
+    line-height: 160%;
+    font-weight: 400;
+  }
+
+  &__phone {
+    @include flexbox(column);
+    margin: rem(3px) rem(12px) rem(12px) rem(12px);
+    gap: rem(12px);
+
+    &Number, &Send{
+        border-radius: 4px;
+        line-height: 150%;
+    }
+
+    &Number {
+      border: 0.5px solid $contentPrimary;
+      @include paddingY(8px);
+      @include paddingX(12px);
+      font-size: rem(14px);
+    }
+
+    &Send{
+        border: 0.5px solid $contentSecondary;
+        @include paddingY(8px);
+        background: $white;
+        font-size: rem(14px);
+        font-weight: 600;
+    }
+  }
+  &__find{
+        margin-left: rem(12px);
+        font-size: rem(10px);
+        line-height: 160%;
+        text-align: center;
+
+        &Email{
+            text-decoration: underline;
+        }
+    }
+}
