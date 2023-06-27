@@ -1,8 +1,5 @@
 @use "./../utils" as *;
 
-body {
-  margin: 0;
-}
 /* 프로필  */
 .user{
   display: flex;
@@ -90,7 +87,7 @@ font-weight: 700;
 
 /* 열정온도  */
 .temperature{
-padding: 12px;
+padding: rem(12px);
 
 }
 /* 열정온도 제목 */
@@ -248,16 +245,16 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
   background-color: $tertiary;
   border-radius: 0 5px 5px;
-  margin-left: 15px;
+  margin-left: rem(15px);
   padding:0 7px;
 }
 
 .first_chat {
-  margin-left: 5px;
+  margin-left: rem(5px);
 }
 
 .user-activity__review__text{
-  font-size: 11px;
+  font-size: rem(11px);
   font-weight: 700;
 }
 
@@ -283,7 +280,7 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   width: 20px;
   height: 20px;
-  padding-right:25px;
+  padding-right: rem(25px);
 }
 .trader__info{ 
   display: flex;
@@ -292,7 +289,7 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .trader__info__name{
-  font-size: 10px;
+  font-size: rem(10px);
   font-weight: 700;
   text-decoration-line: none;
   color: #000;
@@ -300,14 +297,14 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .trader__info__history{
-  font-size: 10px;
+  font-size: rem(10px);
   color:$contentSecondary;
   margin:0;
   padding-top: 2px;
 }
 
 .trader__info__text{
-  font-size: 12px;
+  font-size: rem(12px);
   font-weight: 700;
   margin: 0;
   padding-top: 5px;
@@ -327,7 +324,7 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 .link__list__item{
   text-decoration-line: none;
   color: $contentPrimary;
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
 }
 
 /* 로그아웃 아이디 부분 */

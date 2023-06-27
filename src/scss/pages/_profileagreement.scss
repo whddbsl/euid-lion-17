@@ -1,6 +1,5 @@
-body {
-  margin: 0;
-}
+@use "./../utils" as *;
+
 /* 기본 정보 블럭 */
 .user-details {
   display: flex;
