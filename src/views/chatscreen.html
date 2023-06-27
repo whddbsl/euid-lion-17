@@ -17,10 +17,15 @@
 <body>
   <header class="chatscreen__header">
     <img src="./../images/board/direction_left.png" alt="뒤로 가기" tabindex="0"/>
-    <p>EUID 피그마 스터디 하실분~ 1</p>
+    <p>EUID 피그마 스터디 하실분~ <span class="chatscreen__gray">1</span></p>
     <img src="./../images/board/hamburger.png" alt="목록" tabindex="0"/>
   </header>
-  <main>
+  <main class="chatscreen">
+    <div class="chatscreen__send">
+      <img src="./../images/chatscreen/plus.png" alt="보내기 메뉴" tabindex="0"/>
+      <input type="text" class="qnaBoardInput__input" placeholder="메세지 보내기"/>
+      <img src="./../images/chatscreen/send.png" alt="전송" tabindex="0"/>
+    </div>
   </main>
 </body>
 </html>
