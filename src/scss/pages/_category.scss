@@ -35,7 +35,7 @@
 .button__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   column-gap: rem(8px);
   row-gap: rem(16px);
 }

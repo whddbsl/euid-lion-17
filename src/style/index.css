@@ -435,7 +435,7 @@ legend {
 .button__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   column-gap: 0.5rem;
   row-gap: 1rem;
 }
