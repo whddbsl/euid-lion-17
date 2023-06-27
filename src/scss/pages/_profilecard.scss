@@ -23,7 +23,7 @@ body {
 
 /* 프로필 카드 섹션 */
 .profilecard {
-  background-color: #919191;
+  background-color: $contentSecondary;
   padding-left: 11PX;
   padding-right: 11PX;  
 }
@@ -48,7 +48,7 @@ body {
 
 /* 프로필 카드 아이디 박스 */
 .profilecard__profile{
-  background-color: white;
+  background-color: $background;
   border-radius: 10PX;
   height: 62px;
   display: flex;
@@ -65,10 +65,10 @@ body {
 
 .profilecard__profile__id-number{
   margin-top: 2px;
-  border: 1px solid #5A85EE;
+  border: 1px solid $secondary-color;
   border-radius: 8px;
   font-size: 11px;
-  color:#5A85EE;
+  color: $secondary-color;
   padding:2px;
 }
 
@@ -82,7 +82,7 @@ body {
 
 /* 프로필 카드 기본정보*/
 .profilecard__basicInfo{
-  background-color: white;
+  background-color: $backgrounde;
   border-radius: 10px 10px 0 0;
 }
 
@@ -106,7 +106,7 @@ body {
   text-decoration-line: none;
   font-size: 11px;
   font-weight: 700;
-  color:#5A85EE;
+  color:$secondary-color;
 }
 
 /* 프로필 사진 블럭 */
@@ -153,19 +153,19 @@ body {
 
 .basicInfo__content__text{
   font-size: 11px;
-  color:#919191
+  color: $contentSecondary;
 }
 
 /* 이듬아이디 글자색 설정 */
 .basicInfo-id{
- color: #000;
+ color: $contentPrimary;
  font-weight: 700;
 }
-
+s
 /* 추가 정보 리스트 */
 
 .profilecard__add{
-  background-color: white;
+  background-color: $background;
   border-radius: 10px 10px 0 0;
   margin-top: 13px;
 }
@@ -190,7 +190,7 @@ body {
   text-decoration-line: none;
   font-size: 11px;
   font-weight: 700;
-  color:#5A85EE;
+  color:$secondary-color;
 }
 
 .last__content{

@@ -1,5 +1,4 @@
 @use "./../utils" as *;
-@use "./../base" as *;
 
 body {
   margin: 0;
@@ -12,9 +11,9 @@ body {
   align-items:center;
 }
 .user-profile {
-  width: 101px;
-  height: 120px;  
-  margin-top: 42px;
+  width: rem(101px);
+  height: rem(120px);  
+  margin-top: rem(42px);
   display: flex;
   flex-flow: wrap;
   justify-content:center;
@@ -22,8 +21,8 @@ body {
 }
 /* 프로필 사진 */
 .user-porofile__photo{
-  width: 68px;
-  height: 66px;
+  width: rem(68px);
+  height: rem(66px);
   border-radius: 50%;
   box-shadow: 0 0 4px 4px #ccc;
 }
@@ -34,7 +33,7 @@ body {
   right: 20px;
 }
 .user-porofile__edit-img{
- background-color: #fff;
+ background-color: $background;
  border-radius: 50%;
  box-shadow: 0 4px 4px #ccc; 
  position: absolute;
@@ -42,7 +41,7 @@ body {
 /* 프로필 아이디 */
 .user-profile__id{
   margin:0;
-  font-size:18px;
+  font-size: rem(18px);
 }
 
 .user-profile__id-number{
@@ -52,7 +51,7 @@ body {
   color: $secondary-color;
   text-align:center;
   padding:0.5px;
-  margin-left:6px;
+  margin-left: 6px;
 }
 
 .user-profile__status{
@@ -85,7 +84,7 @@ padding-bottom: 6px;
 display: block; 
 text-decoration-line: none;
 color: black;    
-font-size: 12px;
+font-size: rem(12px);
 font-weight: 700;
 }
 
@@ -108,11 +107,11 @@ padding: 12px;
 }
 
 .temperature__text__title{
-font-size: 11px;
+font-size: rem(11px);
 }
 
 .temperature__text__img{
-  padding-left: 2px;
+  padding-left: rem(2px);
 }
 
 .temperature__status{
@@ -121,7 +120,7 @@ font-size: 11px;
 
 .temperature__status__degree{
   color: $secondary-color;
-  font-size: 15px;
+  font-size: rem(15px);
   position: absolute;
   transform: translate(225px,-2px); 
 }
@@ -129,7 +128,7 @@ font-size: 11px;
 .temperature__status__item__text{
   position: absolute;
   transform: translateX(75px);
-  font-size: 10px;
+  font-size: rem(10px);
   color: $contentSecondary;
 }
 
@@ -143,13 +142,13 @@ font-size: 11px;
 
 .temperature__progress::-webkit-progress-bar {
   background-color: grey;
-  border-radius:10px;
+  border-radius: rem(10px);
   width: 296px; 
   height: 8px;
 }
 
 .temperature__progress::-webkit-progress-value {
-  background-color: #373F67;
+  background-color: $primary-color;
   border-radius:10px;
 }
 /* 좋아요와 응답률 */
@@ -302,7 +301,7 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 .trader__info__history{
   font-size: 10px;
-  color:#919191;
+  color:$contentSecondary;
   margin:0;
   padding-top: 2px;
 }
@@ -327,7 +326,7 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 .link__list__item{
   text-decoration-line: none;
-  color: #000;
+  color: $contentPrimary;
   margin-bottom: 18px;
 }
 
