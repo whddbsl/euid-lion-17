@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="엔터이듬(EnterEUID)" />
+    <meta name="keywords" content="멋사,이듬,EUID,마켓,프론트" />
+    <meta name="author" content="EUID-17" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./../src/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./../style/index.css" />
+    <meta property="og:title" content="엔터이듬(EnterEUID)" />
+    <meta property="og:description" content="당신 곁의 엔터이듬 마켓" />
+    <meta property="og:image" content="./../src/images/og-image.png" />
+    <meta property="og:image:alt" content="엔터이듬 로고" />
+    <title>writeQnA</title>
+</head>
+
+<body>
+    <header class="writeQnaHeader">
+        <button class="writeQnaHeader__closeBtn"><img src="./../images/qna/close.svg" alt="닫기" /></button>
+        <h2 class="writeQnaHeader__title">Q&A 글쓰기</h2>
+        <button class="writeQnaHeader__commitBtn">완료</button>
+    </header>
+    <main class="writeQnaMain">
+        <div class="writeQnaMain__category">
+            <span class="writeQnaMain__category__name">FRONTEND</span>
+            <img src="./../images/profile/direction.png" alt="카테고리 선택" />
+        </div>
+        <section class="writeQnaMain__info">
+            <span class="writeQnaMain__info__title">안내</span>
+            <span>중고거래 관련, 명예훼손, 광고/홍보 목적의 글은 올리실 수 없어요.</span>
+            <a href="" class="writeQnaMain__info__link">Q&A글쓰기 운영정책</a>
+        </section>
+        <form action="submit" method="post" class="writeQnaMain__input">
+            <label for="title" class="a11yHidden">제목</label>
+            <input type="text" id="title" name="title" placeholder="제목" class="writeQnaMain__input__title" />
+            <label for="content" class="a11yHidden">내용</label>
+            <textarea name="content" id="content" cols="25" rows="7"
+                placeholder="관심있는 분야에 대한 질문을 올려주세요. 장소정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요"
+                class="writeQnaMain__input__content"></textarea>
+        </form>
+        <nav class="writeQnaMain__nav">
+            <section class="writeQnaMain__nav__left">
+                <a href="">사진<img src="./../images/comment/photo.svg" alt="사진" /></a>
+                <a href="">장소<img src="./../images/qna/map.svg" alt="위치" /></a>
+            </section>
+            <button><img src="./../images/qna/keyboard.svg" alt="키보드" /></button>
+        </nav>
+    </main>
+</body>
