@@ -1,0 +1,118 @@
+@use "./../utils" as *;
+
+body {
+  margin-bottom: 69px;
+  position: relative;
+}
+
+// 헤더영역
+.mainHeader {
+  @include flexbox($justify: space-between, $items: center);
+  padding: rem(10px) 6.25%;
+
+  & h3 {
+    font-size: rem(20px);
+    font-weight: 600;
+  }
+
+  &__dropBtn {
+    @include flexbox;
+    & img {
+      width: rem(18px);
+      height: rem(18px);
+      margin-left: rem(6px);
+    }
+  }
+
+  &__tap {
+    @include flexbox($justify: space-between);
+    background: $primary-color;
+    color: #9da1b4;
+    padding: rem(8px) 3.75%;
+    font-size: rem(14px);
+    & li:nth-child(1) {
+      color: $background;
+    }
+  }
+}
+
+.imgWrap {
+  background: $contentTertiary;
+  position: relative;
+  min-height: rem(214px);
+  padding-top: rem(20px);
+  padding-left: rem(20px);
+  padding-bottom: rem(45px);
+  
+  & .captionWrap {
+        @include flexbox($direction: column);
+        gap: rem(2px);
+        width: 46.25%;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: rem(202px);
+  }
+
+  &__imgCaption {
+    @include flexbox($direction: column);
+    gap: rem(58px);
+    color: $white;
+
+    &__order {
+      @include flexbox($items: center);
+      gap: rem(5px);
+      font-size: rem(10px);
+      line-height: 150%;
+      color: $white;
+    }
+  }
+
+  &__imgCationMore {
+    font-size: rem(10px);
+    line-height: 160%;
+  }
+}
+
+.mainSection {
+  @include flexbox($wrap: wrap, $justify: space-around);
+  gap: rem(12px);
+  padding: rem(12px) rem(16px);
+}
+
+.mainSection__article {
+  width: rem(138px);
+
+  & .article__img {
+    width: rem(138px);
+    height: rem(104px);
+    border-radius: rem(8px);
+    background: $contentSecondary;
+    margin-bottom: rem(12px);
+  }
+
+  & .article__title {
+    font-size: rem(10px);
+    line-height: 160%;
+    margin-bottom: rem(4px);
+  }
+
+  & .article__category {
+    font-size: rem(10px);
+    color: $contentSecondary;
+    line-height: 160%;
+  }
+
+  & .article__writer {
+    margin-left: rem(6px);
+    &::before {
+      content: "";
+      border-right: rem(1px) solid $contentSecondary;
+      margin-right: rem(6px);
+    }
+  }
+}
+
