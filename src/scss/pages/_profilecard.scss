@@ -1,0 +1,199 @@
+@use "./../utils" as *;
+
+/* 프로필 수정 */
+
+.user-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.user-edit__text{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.user-edit__icon__img{
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/* 프로필 카드 섹션 */
+.profilecard {
+  background-color: $contentSecondary;
+  padding-left: 11PX;
+  padding-right: 11PX;  
+}
+
+/* 프로필카드 제목 */
+.profilecard__title{
+  display: flex;
+  align-items:center;
+  padding-top: 10px;
+
+}
+
+.profilecard__title__text{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.profilecard__title__img{
+  display: block;
+  width: 14px;
+  height: 14px;
+  padding-left: 2px;
+}
+
+/* 프로필 카드 아이디 박스 */
+.profilecard__profile{
+  background-color: $background;
+  border-radius: 10PX;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin: 13px 0;
+}
+
+.profilecard__profile__id-name{
+  font-size: 15px;
+  margin:0 0 2px ;
+}
+
+.profilecard__profile__id-number{
+  margin-top: 2px;
+  border: 1px solid $secondary-color;
+  border-radius: 8px;
+  font-size: 11px;
+  color: $secondary-color;
+  padding:2px;
+}
+
+.profilecard__profile__img {
+  display:block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 2px #ccc;  
+}
+
+/* 프로필 카드 기본정보*/
+.profilecard__basicInfo{
+  background-color: $background;
+  border-radius: 10px 10px 0 0;
+}
+
+.basicInfo__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 12px 10px 16px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  height: 50px;
+}
+
+.basicInfo__title__text{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.basicInfo__title__edit{
+  display: block;
+  text-decoration-line: none;
+  font-size: 11px;
+  font-weight: 700;
+  color:$secondary-color;
+}
+
+/* 프로필 사진 블럭 */
+
+.profilecard__infoList{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  padding: 10px 13px;
+  margin: 0;
+}
+
+.basicInfo__photo{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.basicInfo__photo__text{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.basicInfo__photo__img{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 2px #ccc;
+}
+
+/* 기타 기본 정보 리스트 */
+.basicInfo__content{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-bottom: 17px;
+}
+
+.basicInfo__content__title{
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.basicInfo__content__text{
+  font-size: 11px;
+  color: $contentSecondary;
+}
+
+/* 이듬아이디 글자색 설정 */
+.basicInfo-id{
+ color: $contentPrimary;
+ font-weight: 700;
+}
+
+/* 추가 정보 리스트 */
+
+.profilecard__add{
+  background-color:white;
+  border-radius: 10px 10px 0 0;
+  margin-top: 13px;
+}
+
+.addInfo__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 12px 10px 16px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  height: 50px;
+}
+
+.addInfo__title__text{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.addInfo__title__edit{
+  display: block;
+  text-decoration-line: none;
+  font-size: 11px;
+  font-weight: 700;
+  color:$secondary-color;
+}
+
+.last__content{
+  padding-bottom: 32px;
+}
