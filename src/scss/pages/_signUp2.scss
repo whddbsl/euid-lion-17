@@ -1,11 +1,11 @@
 @use "./../utils" as *;
 @use "./../base/" as *;
 
-.signUpHeader {
+.signUp2Header {
   margin-top: rem(37px);
 }
 
-.signUpMain {
+.signUp2Main {
   &__info {
     padding: rem(12px) rem(62px) rem(12px) rem(12px);
     font-size: rem(18px);
@@ -33,13 +33,14 @@
       @include paddingY(8px);
       @include paddingX(12px);
       font-size: rem(14px);
+      color: $contentPrimary;
     }
 
     &Send{
         border: 0.5px solid $contentSecondary;
         @include paddingY(8px);
         background: $white;
-        color: $contentSecondary;
+        color: $contentPrimary;
         font-size: rem(14px);
         font-weight: 600;
     }
@@ -53,12 +54,4 @@
             text-decoration: underline;
         }
     }
-}
-
-.signUpKeyboard{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    object-fit: cover;
-    // height: 129px;
 }
