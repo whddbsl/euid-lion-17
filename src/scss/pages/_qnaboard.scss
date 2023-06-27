@@ -1,0 +1,167 @@
+@use "./../utils" as *;
+
+.qnaBoardNav{
+    @include flexbox($justify:space-between);
+    @include paddingX(18px);
+    @include paddingY(8px);
+    margin-bottom: rem(12px);
+    &__item{
+        @include flexbox;
+        height: 20px;
+        gap: 8px;
+    }
+}
+
+.qnaBoardMain{
+    @include paddingX(12px);
+
+    &__tag{
+        @include paddingX(12px);
+        @include paddingY(2px);
+        background: #c4c7d2;
+        border-radius: 4px;
+        font-size: rem(10px);
+        font-weight: 600;
+        line-height: 150%;
+        color: $white;
+    }
+}
+
+.qnaBoard__user{
+    margin-top: rem(12px);
+    margin-bottom: rem(14px);
+    &Profile{
+        background: $contentSecondary;
+        width: rem(30px);
+        height: rem(30px);
+        border-radius: 50px;
+        margin-right: rem(10px);
+    }
+
+    &Name{
+        font-size: rem(10px);
+        line-height: 160%;
+    }
+
+    &Info{
+        // @include flexbox;
+        font-size: rem(10px);
+        line-height: 160%;
+        color: $contentTertiary;
+
+        & time::before{
+            content: "\00B7";
+            margin-right: rem(4px);
+        }
+        & time{
+            margin-left: rem(4px);
+        }
+    }
+
+    // &Wrap{
+    //     @include flexbox($direction:column);
+    // }
+}
+
+.qnaBoard__profile{
+    @include flexbox($items:center);
+}
+
+.qnaBoardContent{
+    width: 100%;
+
+    &__title{
+        font-size: rem(18px);
+        font-weight: 600;
+        line-height: 160%;
+
+        & span{
+            color: #5A85EE;
+        }
+    }
+
+    & p{
+        font-size: rem(14px);
+        line-height: 160%;
+    }
+
+    &__img{
+        border-radius: 8px;
+        background: $contentSecondary;
+        margin-top: rem(12px);
+        margin-bottom: rem(8px);
+        height: rem(366px);
+        width: 100%;
+    }
+}
+
+
+.qnaBoardInput{
+    @include flexbox($items:center);
+    @include paddingY(8px);
+    margin-bottom: rem(32px);
+
+    & img {
+        margin-right: rem(10px);
+    }
+
+    &__input{
+        @include paddingY(8px);
+        @include paddingX(12px);
+        border-radius: 20px;
+        border: none;
+        background: #EBECF0 url(./../../images/comment/smile.svg) no-repeat;
+        background-position: right center;
+        background-origin: content-box;
+        font-size: rem(14px);
+        line-height: 160%;
+        flex-grow: 2;
+    }
+}
+
+.qnaBoardAd{
+    padding: rem(12px) rem(18px) rem(12px) rem(12px);
+    border-radius: 8px;
+    background-color: #373F67;
+    font-size: rem(10px);
+    position: relative;
+    margin-bottom: rem(10px);
+    
+    &__wrap{
+        @include flexbox($items:center);
+        gap: rem(4px);
+    }
+
+    &__title{
+        font-weight: 600;
+        line-height: 150%;
+        color: $white;
+    }
+
+    &__detail{
+        color: $contentTertiary;
+        line-height: 160%;
+    }
+
+    &__bar{
+        margin-top: rem(10px);
+    }
+
+    &__medal{
+        width: 50px;
+        height: 50px;
+        background: $white;
+        border-radius: 10px;
+        position: absolute;
+        right: 18px;
+        top: 12px;
+    }
+}
+
+.qnaBoardComment{
+    @include flexbox($direction:column, $items:center);
+    margin-top: 60px;
+    font-size: rem(14px);
+    color: $contentTertiary;
+    line-height: 160%;
+}
