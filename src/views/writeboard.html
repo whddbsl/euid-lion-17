@@ -15,15 +15,22 @@
   <title>엔터이듬 - 글 작성</title>
 </head>
 <body>
-  <nav class="nav">
-    <ul class="nav__list">
-        <li><img src="./../../images/homebar/home.png" alt="" /><a class="nav__item" href="">홈</a></li>
-        <li><img src="./../../images/homebar/life.png" alt="" /><a class="nav__item" href="">게시판</a></li>
-        <li><img src="./../../images/homebar/map.png" alt="" /><a class="nav__item" href="">내 주변</a></li>
-        <li><img src="./../../images/homebar/chat.png" alt="" /><a class="nav__item" href="">채팅</a></li>
-        <li><img src="./../../images/homebar/my.png" alt="" /><a class="nav__item" href="">나의 이듬</a></li>
-    </ul>
-</nav>
-  <button>아오버튼시치</button>
+  <header class="writeboard__header">
+    <img src="./../images/board/direction_left.png" alt="" tabindex="0"/>
+  </header>
+  <main>
+    <div class="writeboard">
+      <input type="text" class="writeboard__input" placeholder="이웃과 어떤 활동을 할까요"/>
+      <p class="writeboard__popular">남가좌제2동 근처 인기활동</p>
+      <div class="writeboard__activities">
+        <button class="subject__button">💻 같이 프로젝트해요</button>
+        <button class="subject__button">📝 같이 스터디해요</button>
+        <button class="subject__button">🍚 같이 밥먹어요</button>
+        <button class="subject__button">⌨️ 같이 Lv2.알고리즘 풀어요</button>
+        <button class="subject__button">🙈 오프라인으로 만나요</button>
+      </div>
+    </div>
+    <button class="writeboard__button">다음</button>
+  </main>
 </body>
 </html>

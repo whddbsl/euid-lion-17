@@ -1,5 +1,133 @@
 @use "./../utils" as *;
 @use "./../base" as *;
 
-button{
+
+/* 최상단 바 */
+
+.writeboard__header{
+  padding:0.5rem 0 0.5rem 0.75rem;
 }
+
+/* 제목 */
+
+.writeboard{
+  padding:1rem 0 0 0.75rem;
+
+  &__input{
+    border:none;
+    width:90%;
+    font-size:1.166rem;
+    margin: 0 4% rem(12px) 4%;
+  }
+
+  &__popular{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size:0.66rem;
+  }
+
+  .subject__button{
+    margin-bottom:0.6875rem;
+  }
+
+  &__button{
+    @include button;
+    width:92.8125%;
+    height:45px;
+    position:fixed;
+    bottom:rem(34px);
+  }
+
+  &__category{
+    @include flexbox($justify:space-between);
+    padding:rem(16px) rem(12px);
+    font-size:rem(14px);
+  }
+  
+  &__article{
+    padding:rem(16px) rem(12px);
+    border-top: 0.3px solid $contentSecondary;
+    border-bottom: 0.3px solid $contentSecondary;
+    font-size:rem(10.5px);
+  }
+}
+
+.writeboard__options{
+  font-size:rem(14px);
+
+  li{
+    @include flexbox($justify:space-between, $items:center);
+    padding:rem(12px) rem(14.5px);
+
+    div{
+      @include flexbox($items:center);
+
+      span{
+        margin:0px rem(11px);
+      }
+    }
+  }
+
+  img{
+    width:20px;
+  }
+
+  div .writeboard__plusminus{
+    width:16px;
+  }
+
+  input[type="text"]{
+    text-align: right;
+  }
+
+}
+
+/* writeboard2 */
+
+.writeboard2{
+  input{
+    border:none;
+  }
+}
+
+/* writeboard3 */
+
+.writeboard3{
+  padding:rem(12px);
+  font-size:rem(14px);
+
+  h2{
+    font-size:rem(18.6px);
+    font-weight: 600;
+  }
+
+  ul li{
+    @include flexbox($justify:space-between, $items:center);
+    padding:rem(12px) rem(6px);
+
+    div{
+      @include flexbox($items:center);
+    }
+  }
+
+  .noflex{
+    display:block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .writeboard__warning{
+    font-size:rem(10.5px);
+    color: $contentTertiary;
+    margin: rem(8px) 0;
+  }
+
+  .subject__button:first-of-type{
+    background-color: $primary-color;
+    color: $white;
+    border-color:transparent;
+    margin-bottom:24px;
+  }
+}
+
