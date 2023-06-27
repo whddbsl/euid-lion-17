@@ -399,7 +399,6 @@ legend {
 }
 
 .main {
-  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -447,8 +446,6 @@ legend {
 }
 
 .startBtn {
-  width: 18.8125rem;
-  height: 2.25rem;
   border: none;
   border-radius: 0.5rem;
   background-color: #373F67;
@@ -457,7 +454,10 @@ legend {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 140%;
-  margin-top: 10.4375rem;
+  margin-bottom: 5.25rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  width: 90%;
 }
 
 /*# sourceMappingURL=index.css.map */

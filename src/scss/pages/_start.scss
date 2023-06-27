@@ -1,7 +1,6 @@
 @use "./../utils" as *;
 
 .main {
-  width: 100%;
   @include flexbox(column);
   align-items: center;
   margin-top: rem(261px);
@@ -33,27 +32,28 @@
   @include flexbox(column);
   align-items: center;
 
-  &__line{
+  &__line {
     font-size: rem(10px);
     color: $contentSecondary;
     margin-top: rem(24px);
 
-    & a{
-        color: $primary-color;
-        margin-left: rem(13px);
+    & a {
+      color: $primary-color;
+      margin-left: rem(13px);
     }
   }
 }
 .startBtn {
-    width: rem(301px);
-    height: rem(36px);
-    border: none;
-    border-radius: rem(8px);
-    background-color: $primary-color;
-    padding: rem(8px) rem(126px);
-    color: white;
-    font-size: rem(14px);
-    font-weight: 700;
-    line-height: 140%;
-    margin-top: rem(167px);
+  border: none;
+  border-radius: rem(8px);
+  background-color: $primary-color;
+  padding: rem(8px) rem(126px);
+  color: white;
+  font-size: rem(14px);
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: rem(84px);
+  margin-left: rem(10px);
+  margin-right: rem(10px);
+  width: 90%;
 }
