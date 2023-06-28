@@ -26,8 +26,8 @@
 ## 시작 가이드
 ---
 ### **Requirements**
-* 노드
-* npm 버전 쓰면 될 듯
+* node v18.16.0
+* npm 9.5.1
 
 ### Installation
 ````
@@ -37,21 +37,22 @@ $ npm i
 ## 스택
 ---
 ### **Environment**
-git github
+<img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white">
 
 ### **Config**
-NPM
+<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=NPM&logoColor=white">
 
 ### **Development**
-HTML CSS SASS
+<img src="https://img.shields.io/badge/Html-E34F26?style=for-the-badge&logo=Html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white">
+<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=Sass&logoColor=white">
 
 ### **Communication**
-NOTION DISCORD
+<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
+<img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white">
 
 ----
+## 회고
 
-## 주요 기능
-
-기능은 뭐가 있을까요?
 
 
