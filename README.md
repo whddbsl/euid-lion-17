@@ -14,29 +14,20 @@
 
 ## 팀 소개
 ---
-* 김종윤
-* 안승호
-* 이송엽
-* 이수연
+* 김종윤 (<a>https://github.com/whddbsl</a>)
+* 안승호 (<a>https://github.com/vanicoda</a>)
+* 이송엽 (<a>https://github.com/summer787</a>)
+* 이수연 (<a>https://github.com/sylee-0102</a>)
   
 ## 프로젝트 소개 (5~10줄)
 #### 프로젝트 소개 쓰는 칸
 ---
 
-## 시작 가이드
----
-### **Requirements**
-* node v18.16.0
-* npm 9.5.1
 
-### Installation
-````
-$ npm i
-````
 
 ## 스택
 ---
-### **Environment**
+### **Environment** 
 <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white">
 
 ### **Config**
