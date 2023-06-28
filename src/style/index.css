@@ -398,6 +398,60 @@ legend {
   display: block;
 }
 
+<<<<<<< HEAD
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-items: center;
+  margin-top: 16.3125rem;
+}
+.main__logo {
+  width: 5.25rem;
+  height: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+.main__logoDesc {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-items: center;
+  color: #373F67;
+}
+.main__logoTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.6875rem;
+}
+.main__logoSummary {
+  font-size: 0.875rem;
+}
+
+.bottom {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-items: center;
+}
+.bottom__line {
+  font-size: 0.625rem;
+  color: #919191;
+  margin-top: 1.5rem;
+}
+.bottom__line a {
+  color: #373F67;
+  margin-left: 0.8125rem;
+}
+
+.startBtn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #373F67;
+  padding: 0.5rem 7.875rem;
+=======
 body {
   margin: 3.75% 0;
 }
@@ -573,10 +627,17 @@ footer {
   border-radius: 0.5rem;
   border: none;
   background: #373F67;
+>>>>>>> dev
   color: white;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 140%;
+<<<<<<< HEAD
+  margin-bottom: 5.25rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  width: 90%;
+=======
 }
 
 .exchangeBoard_img {
@@ -3726,6 +3787,7 @@ button {
   background: url(./../../images/qna/speech.png);
   width: 1rem;
   height: 1rem;
+>>>>>>> dev
 }
 
 /*# sourceMappingURL=index.css.map */
