@@ -14,7 +14,7 @@
   &__logoDesc {
     @include flexbox(column);
     align-items: center;
-    color: $primary-color;
+    color: $primary-color
   }
 
   &__logoTitle {
@@ -52,6 +52,7 @@
   font-size: rem(14px);
   font-weight: 700;
   line-height: 140%;
+  margin-top: rem(50px);
   margin-bottom: rem(84px);
   margin-left: rem(10px);
   margin-right: rem(10px);
