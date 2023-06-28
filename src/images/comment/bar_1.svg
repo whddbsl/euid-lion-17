@@ -1,0 +1,13 @@
+<svg width="39" height="3" viewBox="0 0 39 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="board/bar">
+<g clip-path="url(#clip0_238_5719)">
+<rect id="whole" x="0.5" width="38" height="3" rx="1.5" fill="#9DA1B4"/>
+<rect id="progress" x="0.5" width="14" height="3" rx="1.5" fill="#5A85EE"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_238_5719">
+<rect x="0.5" width="38" height="3" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,215 @@
+@use "./../utils" as *;
+
+/* 기본 정보 블럭 */
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.user-details__text{
+  font-size: rem(15px);
+  font-weight: 700;
+}
+
+.user-details__icon__img{
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/* 버튼 기본 스타일 제거 */
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* 사용자 기본정보 섹션 전체 */
+.user-profiledetails{
+  height: 910px;
+  padding: 8px 12px;
+  display: flex;
+  flex-flow: column;
+  gap:30px
+}
+
+/* 하는 일  프로필 키워드*/
+.user-job,
+.uder-keyword{
+  display: flex;
+  flex-flow: column;
+}
+
+.user-job__title,
+.user-keyword__title{
+  font-size: 14px;
+  margin:0 0 8px;
+}
+
+.attachment-button{
+ height: 42px;
+ border: 1px solid #D3D3D3;
+ border-radius: 5px;
+ background-color:$background; 
+ display: flex;
+ justify-content:center;
+ align-items: center;
+}
+
+.pulsIcon-img{
+  padding-right:5px;
+}
+
+/* 성별 & 연령 */
+.user-privacy,
+.user-age{
+display: flex;
+flex-flow: column;
+}
+
+.user-privacy__title,
+.user-age__title{
+  font-size: 14px;
+  margin: 0 0 3px;
+}
+
+.user-privacy__text,
+.user-age__text{
+  font-size: 11px;
+  color:$contentSecondary;
+  margin: 0;
+  padding-top: 3px;
+  padding-bottom: 8px;
+}
+
+.privacy-button{
+display: flex;
+flex-flow: wrap;
+justify-content:center;
+align-items: center;
+}
+
+.privacy-button__img{
+filter: invert(44%) sepia(81%) saturate(796%) hue-rotate(197deg) 
+brightness(98%) contrast(90%);
+padding-right:5px ;
+}
+
+.privacy-button__one{
+width: 148px;
+height: 33px;
+font-weight: 700;
+background-color:$background; 
+border: 1px solid $secondary-color;
+border-radius: 5px;
+color:$secondary-color;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+
+.privacy-button__two{
+width: 148px;
+height: 33px;
+font-weight: 700;
+background-color:#C4C7D2; 
+border-radius: 5px;
+border: none;
+color:$white;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+
+ /* 회사 학교 블럭 */
+ .user-company,
+ .user-school,
+ .user-qualification{
+  display: flex;
+  flex-flow: column;
+ }
+
+.user-company__title,
+.user-school__title,
+.user-qualification__title {
+  font-size: 14px;
+  margin:0 0 8px;
+}
+
+ .edit-button{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .edit-button__item{
+  width: 145px;
+  height: 40px;
+  background-color:$background;
+  border-radius: 5px;
+  border: 1px solid #D3D3D3;
+  color:$contentPrimary;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-weight: 700;
+ }
+
+ .edit-button__item-one{
+  height: 40px;
+  background-color:$background;
+  border-radius: 5px;
+  border: 1px solid #D3D3D3;
+  color:$contentPrimary;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-weight: 700;
+ }
+ /* 취득 자격 블럭 */
+ .user-certification{
+  display: flex;
+  flex-flow: column;
+ }
+
+ .user-certification__title{
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  margin-bottom: 8px;
+ }
+
+ .user-certification__title__img{
+  padding: 2px;
+ }
+
+ .user-certification__button{
+  display: flex;
+  flex-flow: column;
+  justify-content:center;
+  align-items: center;
+  height: 139px;
+  padding: 28px 24px;
+  border: none;
+  border-radius: 20px;
+ }
+
+ .user-certification__button__img{
+  width: 42px;
+  height: 42px;
+  filter: invert(69%) sepia(0%) saturate(0%) 
+  hue-rotate(103deg) brightness(97%) contrast(94%);
+ }
+
+ .user-certification__button__text1{
+  font-size: 11px;
+  font-weight: 700;
+  color: $contentSecondary;
+  padding-top: 7px;
+ }
+
+ .user-certification__button__text2{
+  font-size: 8px;
+  color:#A7A7A7;
+  padding-top: 2px;
+ }
