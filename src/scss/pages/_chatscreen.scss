@@ -1,0 +1,46 @@
+@use "./../utils" as *;
+@use "./../base/" as *;
+
+.chatscreen__header{
+  @include flexbox($items:center, $justify:space-between);
+  padding: rem(8px) rem(12px);
+
+
+  p{
+    font-size:rem(14px);
+    @include flexbox($items:center);
+  }
+
+  img:nth-of-type(2){
+    width:rem(26px);
+    height:rem(26px);
+  }
+}
+
+.chatscreen__gray{
+  font-size:rem(18.6px);
+  font-weight:600;
+  color:$contentTertiary;
+  margin-left: 4px;
+}
+
+.chatscreen__send{
+  @include flexbox($items:center);
+
+  position: fixed;
+  bottom:rem(30px);
+  width:100%;
+
+  img:nth-of-type(1){
+    width:rem(26px);
+    height:rem(26px);
+    margin:0 rem(8px);
+  }
+
+  img:nth-of-type(2){
+    width:rem(18px);
+    height:rem(18px);
+    margin:0 rem(8px);
+  }
+
+}

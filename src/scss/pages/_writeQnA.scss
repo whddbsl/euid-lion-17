@@ -1,0 +1,107 @@
+@use "./../utils" as *;
+
+.writeQnaHeader {
+  @include flexbox($justify: space-between, $items: center);
+  @include paddingX(14px);
+  @include paddingY(12px);
+  font-size: rem(14px);
+  font-weight: 600;
+  line-height: 150%;
+
+  &__closeBtn {
+    border: none;
+    background: none;
+    margin-top: 2px;
+  }
+  &__commitBtn {
+    border: none;
+    background: none;
+    color: $contentTertiary;
+  }
+}
+
+.writeQnaMain {
+  &__category {
+    @include flexbox($justify: space-between, $items: center);
+    @include paddingY(12px);
+    @include paddingX(14px);
+    border-bottom: 0.3px solid $contentSecondary;
+
+    &__name {
+      font-size: rem(14px);
+      font-weight: 600;
+      line-height: 150%;
+    }
+  }
+
+  &__info {
+    margin: rem(12px) rem(14px);
+    background: #8db0f9;
+    border-radius: 10px;
+    @include paddingY(12px);
+    padding-left: rem(16px);
+    padding-right: rem(56px);
+    font-size: rem(10px);
+    line-height: 160%;
+    color: $white;
+
+    &__title{
+        font-weight: 600;
+        margin-right: rem(6px);
+    }
+
+    &__link{
+        text-decoration: underline;
+    }
+  }
+
+
+  &__input__title{
+    width: 100%;
+    @include paddingY(6px);
+    padding-left: rem(30px);
+    padding-right: rem(24px);
+    border: none;
+    outline: none;
+    font-size: rem(18px);
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__input__content{
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    @include paddingX(14px);
+    padding-top: rem(12px);
+    font-size: rem(14px);
+    line-height: 160%;
+  }
+
+  &__nav{
+    padding: rem(12px);
+    @include flexbox($justify:space-between);
+    
+    & img{
+        width: 20px;
+    }
+
+    &__left{
+        @include flexbox($items:center);
+        gap: rem(12px);
+
+        & a{
+            display: inline-flex;
+            align-items: center;
+            font-size: rem(10px);
+            line-height: 160%;
+        }
+    }
+
+    & button{
+        border: none;
+        background: none;
+    }
+  }
+}
