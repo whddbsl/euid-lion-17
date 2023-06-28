@@ -32,6 +32,7 @@ button {
   flex-flow: column;
   padding: 16px 12px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
 
   &__title {
     display: flex;
@@ -96,6 +97,7 @@ button {
 .agree-check__title__text {
   font-size: 15px;
   font-weight: 700;
+  margin-left: 16px;
 }
 
 .agree-check__title__text-must {
@@ -103,7 +105,7 @@ button {
   font-size: 12px;
 }
 
-/* 동의 박스 내용 1*/
+/* 동의 박스 내용 1 */
 .agree-group {
   display: flex;
   flex-flow: column;
@@ -114,12 +116,11 @@ button {
   margin-bottom: 20px;
 }
 
-
 .agree-group__content__text1 {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
-  margin-bottom: 10px;
-  
+  margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 
@@ -155,7 +156,7 @@ button {
   color: $contentSecondary;
   font-weight: 700;
   padding-top: 5px;
-
+  
 }
 
 /* 동의 박스 내용3 */
@@ -172,10 +173,11 @@ button {
   font-weight: 700;
   margin-left: 16px;
   padding-top: 20px;
+  
 }
 
 /* 동의 버튼 그룹 */
-.bottom-grop {
+.bottom-group {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -215,8 +217,45 @@ button {
   align-items: center;
 }
 
-.bottom-grop__text {
+.bottom-group__text {
   text-decoration-line: none;
   font-size: 12px;
   color: $contentSecondary;
+}
+//저장 완료 버튼
+.saved-buttonBox{
+  width: 225px;
+  height: 171px;
+  background-color: $white;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow:  0 4px 3px $contentSecondary;
+  position: fixed;
+  top: 200px;
+  right: 50px;
+  z-index: 1;
+}
+
+.saved-buttonBox__title{
+  font-size: rem(15px);
+  font-weight: 400;
+  color: #000;
+}
+
+.saved-buttonBox__text{
+  font-size: rem(11px);
+  color: $contentSecondary;
+  line-height: 15px;
+}
+
+.saved-button{
+  width: 189px;
+  height: 37px;
+  border-radius: 10px;
+  color: $white;
+  background-color: $primary-color;
 }
