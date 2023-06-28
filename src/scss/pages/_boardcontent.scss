@@ -1,0 +1,79 @@
+@use "./../utils" as *;
+@use "./../base" as *;
+
+.boardcontent{
+  padding:rem(24px) rem(12px);
+  font-size: rem(14px);
+  line-height:160%;
+
+  &__header{
+    @include flexbox($justify:space-between);
+    padding: rem(8px) rem(16px);
+
+    img{
+      width:rem(20px);
+      height:rem(20px);
+      &:nth-of-type(1){
+        margin-right: rem(12px);
+      }
+    }
+  }
+
+  &__label{
+    padding: 0 rem(4px);
+    color:#fff;
+    background-color: #c4c7d2;
+    border-radius: 4px;
+    font-size: rem(10.5px);
+  }
+
+  h2{
+    font-size:rem(18.6px);
+    font-weight:600;
+    margin:rem(9px) 0;
+  }
+
+  &__bold{
+    font-weight:600;
+    margin-top: rem(32px);
+    margin-bottom: rem(13px);
+  }
+
+  &__recruiting{
+    color:$secondary-color;
+  }
+
+  &__profile{
+    @include flexbox($wrap:wrap, $items:center, $justify:space-between);
+    width:rem(132px);
+    font-size:rem(10.5px);
+    line-height:rem(10.5px);
+  }
+
+  &__info{
+    @include flexbox($wrap:wrap, $items:center);
+    width:rem(92px);
+
+    img{
+      margin-left: rem(4px);
+    }
+  }
+
+  &__gray{
+    color:$contentTertiary;
+  }
+
+  &__picture{
+    width:rem(30px);
+    height:rem(30px);
+    border-radius: 50px;
+    background-color: $contentSecondary;
+    display:inline-block;
+  }
+
+  &__organizer{
+    width:rem(20px);
+    height:rem(20px);
+  }
+}
+
