@@ -6,10 +6,19 @@
 
 ## 프로젝트 정보
 ---
-1. 프로젝트 목표 : ??
+1. 프로젝트 목표 : 모바일 레이아웃에 익숙해지고, 전체 페이지를 만들어 성공적으로 배포하기
 2. 개발 기간 : 2023.06.24 ~ 2023.06.28 (4일)
 
+
+## 구현 페이지
+----
+![스크린샷 2023-06-28 오후 3 41 42](https://github.com/whddbsl/euid-lion-17/assets/130979302/4b02fc0f-6a91-4fde-8115-4e7751f9fb4d)
+![스크린샷 2023-06-28 오후 3 42 00](https://github.com/whddbsl/euid-lion-17/assets/130979302/0aca8c44-b92c-439b-a48d-d387118e02e3)
+![스크린샷 2023-06-28 오후 3 42 14](https://github.com/whddbsl/euid-lion-17/assets/130979302/89cdc1ad-1a18-40e9-bf4d-54b01bca75b8)
+![스크린샷 2023-06-28 오후 3 42 26](https://github.com/whddbsl/euid-lion-17/assets/130979302/3dffa30e-54e2-40b1-aaac-a6203a966a42)
+
 ## 배포 주소
+#### https://entereuid-17.netlify.app/
 ---
 
 ## 팀 소개
@@ -19,12 +28,6 @@
 * 이송엽 (<a>https://github.com/summer787</a>)
 * 이수연 (<a>https://github.com/sylee-0102</a>)
   
-## 프로젝트 소개 (5~10줄)
-#### 프로젝트 소개 쓰는 칸
----
-
-
-
 ## 스택
 ---
 ### **Environment** 
@@ -43,7 +46,7 @@
 <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white">
 
 ----
-## 회고
+
 
 
 
