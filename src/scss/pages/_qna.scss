@@ -1,0 +1,94 @@
+@use "./../utils" as *;
+@use "./../base/" as *;
+
+
+.qna{
+  /* 헤더 */
+
+  &__header{
+    padding: rem(8px) rem(12px);
+    border-bottom: rem(7px) solid #BDBDBD;
+  }
+
+  &__title{
+    @include flexbox($justify:space-between, $items:center);
+    padding: rem(12px) rem(6px);
+  }
+
+  &__profile{
+    @include flexbox($items:center);
+
+    &--header{
+      display: inline-block;
+      border-radius:10px;
+      width:rem(54px);
+      height:rem(54px);
+      background-color: #EBECF0;
+    }
+
+    &--name{
+      font-size:rem(14px);
+      font-weight:600;
+      margin-left: rem(9px);
+    }
+
+    &--article{
+      display: inline-block;
+      border-radius:10px;
+      width:rem(62px);
+      height:rem(62px);
+      background-color: #D3D3D3;
+      position:absolute;
+      top:rem(12px);
+      right:rem(12px);
+    }
+  }
+
+  &__participating{
+    background-color: $contentTertiary;
+    color: $white;
+    padding:rem(6px) rem(12px);
+    border-radius:8px;
+    font-size:rem(10.5px);
+    @include flexbox($items:center);
+  }
+
+  /* 메인 */
+
+  &__main .board__article{
+    border-bottom:none;
+
+    h3{
+      font-size:rem(14px);
+      font-weight:normal;
+      margin:rem(3px);
+    }
+
+    .board__subtitle{
+      margin-bottom: rem(4px);
+    }
+
+    .board__label{
+      padding:rem(2px) rem(12px);
+    }
+
+    .board__count{
+      transform: translateY(rem(4px));
+      @include flexbox($items:center);
+      gap:2px;
+    }
+
+    .icon__thumbsup{
+      background: url(./../../images/qna/thumbsup.png);
+      width:rem(16px);
+      height:rem(16px);
+    }
+
+    .icon__speech{
+      background: url(./../../images/qna/speech.png);
+      width:rem(16px);
+      height:rem(16px);
+
+    }
+  }
+}

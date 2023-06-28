@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="엔터이듬(EnterEUID)" />
+  <meta name="keywords" content="멋사,이듬,EUID,마켓,프론트" />
+  <meta name="author" content="EUID-17"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./../src/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./../style/index.css" />
+  <meta property="og:title" content="엔터이듬(EnterEUID)"/>
+  <meta property="og:description" content="당신 곁의 엔터이듬 마켓"/>
+  <meta property="og:image" content="./../src/images/og-image.png"/>
+  <meta property="og:image:alt" content="엔터이듬 로고"/>
+  <title>엔터이듬 - 개인정보 동의 팝업창</title>
+</head>
+
+<body>
+  <!-- 기본 정보 블럭 -->
+  <div class="user-details">
+    <p class="user-details__text">기본정보</p>
+    <a href="" class="user-details__img">
+      <img src="../images/profile/close.png" alt="엑스 표시 아이콘" class="user-details__icon__img" />
+    </a>
+  </div>
+
+  <!-- 취득자격 블럭 -->
+  <div class="user-certification">
+    <div class="user-certification__title">
+      <span>취득자격</span>
+      <img class="user-certification__title__img" src="../images/profile/information.png" alt="알파벳 아이 모양의 아이콘" />
+    </div>
+    <button type="button" class="user-certification__button">
+      <img class="user-certification__button__img" src="../images/profile/detailCard.svg" alt="자격증 모양의 아이콘" />
+      <span class="user-certification__button__text1">국가 자격증을 간편하게 등록해보세요!</span>
+      <span class="user-certification__button__text2">pc 프로필 설정> 취득 자격 관리에서 등록 가능합니다.</span>
+    </button>
+  </div>
+
+  <!-- 동의 체크박스 -->
+  <div class="agree-check">
+
+    <div class="agree-check__title">
+      <div class="agree-check__title-gruop">
+        <input type="checkbox" id="check_button" />
+        <label for="check_button" class="agree-check__title__text">
+          아래 내용에 전체 동의합니다.
+        </label>
+      </div>
+      <span class="agree-check__title__text-must">필수동의</span>
+    </div>
+
+    <div class="agree-group">
+
+      <div class="agree-group__content">
+        <input type="checkbox" />
+        <label for="check_button">
+          <span class="agree-group__content__text1">[ 필수 ] 개인 정보 수집 및 이용 동의</span>
+        </label>
+        <p class="agree-group__content__text2">입력한 별명, 프로필 사진, 하는 일, 프로필 키워드, 성별, 연령, 회
+          사, 학교, 자격은 엔터이듬 서비스 내 프로필 페이지, 답변자 정보
+          영역, 엔터이듬 홈 서비스 내 프로필 공개를 목적으로 합니다.
+          <span class="agree-group__content__text3">수집된 정보는 언제든지 직접 삭제할 수 있고, 탈퇴 시에는 바로
+            파기됩니다.</span>
+        </p>
+      </div>
+
+      <div class="agree-group__content2">
+        <div class="agree-group__content2-group">
+          <input type="checkbox" />
+          <label for="check_button" class="agree-group__content2__text1">
+           [ 필수 ] 프로필 정보 노출 영역 확인</label>
+        </div>
+        <a href="" class="agree-group__content2__text2">자세히></a>
+      </div>
+
+      <div class="agree-group__content3">
+        <input type="checkbox" />
+        <label for="check_button" class="agree-group__content3__text">
+          [ 필수 ] 사실과 다른 정보를 기재하여 발생한
+            문제에 대해서는 본인이 일체의 책임을 부담하겠습니다.
+        </label>
+      </div>
+
+    </div>
+    <!-- 취소 저장 버튼 -->
+    <div class="bottom-group">
+      <div class="bottom-button">
+        <button type="button" class="bottom-button1">취소</button>
+        <button type="button" class="bottom-button2">저장</button>
+      </div>
+      <a href="" class="bottom-group__text">정보 초기화 및 이용동의 철회</a>
+    </div>
+  </div>
+
+  <!-- 저장 완료 버튼 -->
+  <div class="saved-buttonBox">
+    <!-- <div class="saved-buttonBoxgroup"> -->
+      <h4 class="saved-buttonBox__title">저장 완료!</h4>
+      <p class="saved-buttonBox__text">내 질문&답변의 프로필 카드 ,프로필 홈에서 변경된 프로필 정보를 확인 할 수 있어요.</p>
+      <button type="button" class="saved-button">확인</button>
+    </div>
+
+
+</body>
+</html>

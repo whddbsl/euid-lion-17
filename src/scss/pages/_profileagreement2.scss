@@ -1,0 +1,261 @@
+@use "./../utils" as *;
+
+/* 기본 정보 블럭 */
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: rem(10px);
+}
+
+.user-details__text {
+  font-size: rem(15px);
+  font-weight: 700;
+}
+
+.user-details__icon__img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/* 버튼 기본 스타일 제거 */
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* 취득 자격 블럭 */
+.user-certification {
+  display: flex;
+  flex-flow: column;
+  padding: 16px 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+
+  &__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: rem(15)px;
+    font-weight: 700;
+  }
+}
+
+.user-certification__title__img {
+  padding: 2px;
+}
+
+.user-certification__button {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 139px;
+  padding: 28px 24px;
+  border: none;
+  border-radius: 20px;
+}
+
+.user-certification__button__img {
+  width: 42px;
+  height: 42px;
+  filter: invert(69%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(97%) contrast(94%);
+}
+
+.user-certification__button__text1 {
+  font-size: 11px;
+  font-weight: 700;
+  color: $contentSecondary;
+  padding-top: 7px;
+}
+
+.user-certification__button__text2 {
+  font-size: 8px;
+  color: #A7A7A7;
+  padding-top: 2px;
+}
+
+/* 동의 박스 */
+.agree-check {
+  display: flex;
+  flex-flow: column;
+}
+
+/* 동의 박스 제목 블럭 */
+.agree-check__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  height: 53px;
+  padding: 16px 12px;
+}
+
+.agree-check__title__text {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.agree-check__title__text-must {
+  color: red;
+  font-size: 12px;
+}
+
+/* 동의 박스 내용 1 */
+.agree-group {
+  display: flex;
+  flex-flow: column;
+  padding: 12px;
+}
+
+.agree-group__content {
+  margin-bottom: 20px;
+}
+
+.agree-group__content__text1 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-left: 16px;
+}
+
+
+.agree-group__content__text2 {
+  font-size: 12px;
+  line-height: 18px;
+  color: $contentSecondary;
+  margin-left: 38px;
+}
+
+.agree-group__content__text3 {
+  font-size: 12px;
+  color: $secondary-color;
+}
+
+/* 동의박스 내용2 */
+.agree-group__content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.agree-group__content2__text1 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.agree-group__content2__text2 {
+  text-decoration-line: none;
+  font-size: 12px;
+  color: $contentSecondary;
+  font-weight: 700;
+  padding-top: 5px;
+  
+}
+
+/* 동의 박스 내용3 */
+.agree-group__content3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agree-group__content3__text {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  margin-left: 16px;
+  padding-top: 20px;
+  
+}
+
+/* 동의 버튼 그룹 */
+.bottom-group {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 8px 48px 8px;
+}
+
+.bottom-button {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-button1 {
+  height: 37px;
+  width: 145px;
+  background-color: #D8D9E1;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.bottom-button2 {
+  height: 37px;
+  width: 145px;
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-group__text {
+  text-decoration-line: none;
+  font-size: 12px;
+  color: $contentSecondary;
+}
+//저장 완료 버튼
+.saved-buttonBox{
+  width: 225px;
+  height: 171px;
+  background-color: $white;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow:  0 4px 3px $contentSecondary;
+  position: fixed;
+  top: 200px;
+  right: 50px;
+  z-index: 1;
+}
+
+.saved-buttonBox__title{
+  font-size: rem(15px);
+  font-weight: 400;
+  color: #000;
+}
+
+.saved-buttonBox__text{
+  font-size: rem(11px);
+  color: $contentSecondary;
+  line-height: 15px;
+}
+
+.saved-button{
+  width: 189px;
+  height: 37px;
+  border-radius: 10px;
+  color: $white;
+  background-color: $primary-color;
+}
