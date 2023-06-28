@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -398,132 +398,6 @@ legend {
   display: block;
 }
 
-/* 최상단 바 */
-.writeboard__header {
-  padding: 0.5rem 0 0.5rem 0.75rem;
-}
-
-/* 제목 */
-.writeboard {
-  padding: 1rem 0 0 0.75rem;
-}
-.writeboard__input {
-  border: none;
-  width: 90%;
-  font-size: 1.166rem;
-  margin: 0 4% 0.75rem 4%;
-}
-.writeboard__popular {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  font-size: 0.66rem;
-}
-.writeboard .subject__button {
-  margin-bottom: 0.6875rem;
-}
-.writeboard__button {
-  width: 100%;
-  border: 0;
-  border-radius: 0.5rem;
-  background-color: #373F67;
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  margin: 1.5rem 3.75% 2.125rem;
-  width: 92.8125%;
-  height: 45px;
-  position: fixed;
-  bottom: 2.125rem;
-}
-.writeboard__category {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  padding: 1rem 0.75rem;
-  font-size: 0.875rem;
-}
-.writeboard__article {
-  padding: 1rem 0.75rem;
-  border-top: 0.3px solid #919191;
-  border-bottom: 0.3px solid #919191;
-  font-size: 0.65625rem;
-}
-
-.writeboard__options {
-  font-size: 0.875rem;
-}
-.writeboard__options li {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 0.90625rem;
-}
-.writeboard__options li div {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.writeboard__options li div span {
-  margin: 0px 0.6875rem;
-}
-.writeboard__options img {
-  width: 20px;
-}
-.writeboard__options div .writeboard__plusminus {
-  width: 16px;
-}
-.writeboard__options input[type=text] {
-  text-align: right;
-}
-
-/* writeboard2 */
-.writeboard2 input {
-  border: none;
-}
-
-/* writeboard3 */
-.writeboard3 {
-  padding: 0.75rem;
-  font-size: 0.875rem;
-}
-.writeboard3 h2 {
-  font-size: 1.1625rem;
-  font-weight: 600;
-}
-.writeboard3 ul li {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 0.375rem;
-}
-.writeboard3 ul li div {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.writeboard3 .noflex {
-  display: block;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.writeboard3 .writeboard__warning {
-  font-size: 0.65625rem;
-  color: #9DA1B4;
-  margin: 0.5rem 0;
-}
-.writeboard3 .subject__button:first-of-type {
-  background-color: #373F67;
-  color: #FFFFFF;
-  border-color: transparent;
-  margin-bottom: 24px;
-}
-
-<<<<<<< HEAD
 .categoryHeader {
   display: flex;
   flex-flow: row nowrap;
@@ -567,7 +441,82 @@ legend {
 }
 
 .button {
-=======
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 9rem;
+  height: 3.8125rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #a7a7a7;
+}
+.button__title {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #e9e9e9;
+  line-height: 150%;
+}
+.button__subTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+.button__img {
+  padding-top: 1px;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background: #919191;
+  color: #d3d3d3;
+  display: block;
+}
+
+.checked {
+  background: #373F67;
+  color: white;
+}
+
+.fa-check {
+  padding-top: 2px;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background: white;
+  color: #373F67;
+}
+
+.button__wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.saveBtn {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #373F67;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
 .exchangeBoard_img {
   width: 100%;
   object-fit: cover;
@@ -732,6 +681,131 @@ legend {
 .exchangeBoard__list_txt span:last-child {
   font-weight: 600;
   margin-top: 0.25rem;
+}
+
+/* 최상단 바 */
+.writeboard__header {
+  padding: 0.5rem 0 0.5rem 0.75rem;
+}
+
+/* 제목 */
+.writeboard {
+  padding: 1rem 0 0 0.75rem;
+}
+.writeboard__input {
+  border: none;
+  width: 90%;
+  font-size: 1.166rem;
+  margin: 0 4% 0.75rem 4%;
+}
+.writeboard__popular {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 0.66rem;
+}
+.writeboard .subject__button {
+  margin-bottom: 0.6875rem;
+}
+.writeboard__button {
+  width: 100%;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #373F67;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  margin: 1.5rem 3.75% 2.125rem;
+  width: 92.8125%;
+  height: 45px;
+  position: fixed;
+  bottom: 2.125rem;
+}
+.writeboard__category {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1rem 0.75rem;
+  font-size: 0.875rem;
+}
+.writeboard__article {
+  padding: 1rem 0.75rem;
+  border-top: 0.3px solid #919191;
+  border-bottom: 0.3px solid #919191;
+  font-size: 0.65625rem;
+}
+
+.writeboard__options {
+  font-size: 0.875rem;
+}
+.writeboard__options li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0.90625rem;
+}
+.writeboard__options li div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.writeboard__options li div span {
+  margin: 0px 0.6875rem;
+}
+.writeboard__options img {
+  width: 20px;
+}
+.writeboard__options div .writeboard__plusminus {
+  width: 16px;
+}
+.writeboard__options input[type=text] {
+  text-align: right;
+}
+
+/* writeboard2 */
+.writeboard2 input {
+  border: none;
+}
+
+/* writeboard3 */
+.writeboard3 {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+.writeboard3 h2 {
+  font-size: 1.1625rem;
+  font-weight: 600;
+}
+.writeboard3 ul li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0.375rem;
+}
+.writeboard3 ul li div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.writeboard3 .noflex {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.writeboard3 .writeboard__warning {
+  font-size: 0.65625rem;
+  color: #9DA1B4;
+  margin: 0.5rem 0;
+}
+.writeboard3 .subject__button:first-of-type {
+  background-color: #373F67;
+  color: #FFFFFF;
+  border-color: transparent;
+  margin-bottom: 24px;
 }
 
 /* 헤더 */
@@ -902,83 +976,10 @@ body {
 }
 
 .exchange_header_wrap {
->>>>>>> dev
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-  width: 9rem;
-  height: 3.8125rem;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  border: none;
-  background: #a7a7a7;
-}
-.button__title {
-  font-size: 0.625rem;
-  font-weight: 600;
-  color: #e9e9e9;
-  line-height: 150%;
-}
-.button__subTitle {
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 150%;
-}
-.button__img {
-  padding-top: 1px;
-  width: 1.125rem;
-  height: 1.125rem;
-  border-radius: 50%;
-  background: #919191;
-  color: #d3d3d3;
-  display: block;
-}
-
-.checked {
-  background: #373F67;
-  color: white;
-}
-
-.fa-check {
-  padding-top: 2px;
-  width: 1.125rem;
-  height: 1.125rem;
-  border-radius: 50%;
-  background: white;
-  color: #373F67;
-}
-
-.button__wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-footer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.saveBtn {
-  width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 0.5rem;
-  border: none;
-  background: #373F67;
-  color: white;
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 140%;
-=======
   padding: 0.625rem 6.25%;
 }
 .exchange_header_wrap h3 {
@@ -1269,70 +1270,296 @@ footer {
   z-index: 2;
 }
 
-<<<<<<< HEAD
 .login2Header {
-=======
-<<<<<<< HEAD
-.loginHeader {
->>>>>>> dev
   margin-top: 2.3125rem;
   margin-left: 0.75rem;
 }
 
 .login2Main__info {
   padding: 0.75rem;
-=======
-<<<<<<< HEAD
-.signUp2Header {
-=======
-<<<<<<< HEAD
-.signUpHeader {
-  margin-top: 2.3125rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+.login2Main__infoMore {
+  font-size: 0.625rem;
+  line-height: 160%;
+  font-weight: 400;
+}
+.login2Main__phone {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0.1875rem 0.75rem 0.75rem 0.75rem;
+  gap: 0.75rem;
+}
+.login2Main__phoneNumber, .login2Main__phoneSend {
+  border-radius: 4px;
+  line-height: 150%;
+}
+.login2Main__phoneNumber {
+  border: 0.5px solid #000000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+}
+.login2Main__phoneSend {
+  border: 0.5px solid #919191;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.login2Main__find {
   margin-left: 0.75rem;
-  height: 2.25rem;
+  font-size: 0.625rem;
+  line-height: 160%;
+  text-align: center;
+}
+.login2Main__findEmail {
+  text-decoration: underline;
 }
 
-.signUpMain__phone {
-=======
-<<<<<<< HEAD
-.signUpHeader {
->>>>>>> dev
+.loginHeader {
+  margin-top: 2.3125rem;
+  margin-left: 0.75rem;
+}
+
+.loginMain__info {
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+.loginMain__infoMore {
+  font-size: 0.625rem;
+  line-height: 160%;
+  font-weight: 400;
+}
+.loginMain__phone {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0.1875rem 0.875rem 0.75rem 0.75rem;
+  gap: 0.75rem;
+}
+.loginMain__phoneNumber, .loginMain__phoneSend {
+  border-radius: 4px;
+  line-height: 150%;
+}
+.loginMain__phoneNumber {
+  border: 0.5px solid #000000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+}
+.loginMain__phoneSend {
+  border: 0.5px solid #919191;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #FFFFFF;
+  color: #919191;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.loginMain__find {
+  margin-left: 0.75rem;
+  font-size: 0.625rem;
+  line-height: 160%;
+  text-align: center;
+}
+.loginMain__findEmail {
+  text-decoration: underline;
+}
+
+.signUp2Header {
   margin-top: 2.3125rem;
 }
 
 .signUp2Main__info {
   padding: 0.75rem 3.875rem 0.75rem 0.75rem;
->>>>>>> dev
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 150%;
 }
-<<<<<<< HEAD
-.login2Main__infoMore {
-=======
-<<<<<<< HEAD
-.loginMain__infoMore {
->>>>>>> dev
-  font-size: 0.625rem;
-  line-height: 160%;
-  font-weight: 400;
-}
-<<<<<<< HEAD
-.login2Main__phone {
-=======
-.loginMain__phone {
-=======
 .signUp2Main__infoMore {
   font-size: 0.625rem;
   line-height: 160%;
 }
-<<<<<<< HEAD
 .signUp2Main__phone {
-=======
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0.1875rem 0.875rem 0.75rem 0.75rem;
+  gap: 0.75rem;
+}
+.signUp2Main__phoneNumber, .signUp2Main__phoneSend {
+  border-radius: 4px;
+  line-height: 150%;
+}
+.signUp2Main__phoneNumber {
+  border: 0.5px solid #000000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  color: #000000;
+}
+.signUp2Main__phoneSend {
+  border: 0.5px solid #919191;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.signUp2Main__find {
+  font-size: 0.625rem;
+  line-height: 160%;
+  text-align: center;
+}
+.signUp2Main__findEmail {
+  text-decoration: underline;
+}
+
+.signUp3Header {
+  margin-top: 2.3125rem;
+  margin-left: 0.75rem;
+  height: 2.25rem;
+}
+
+.signUp3Main__phone {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0.1875rem 0.625rem 0.375rem 0.75rem;
+  gap: 0.8125rem;
+}
+.signUp3Main__phoneNumber, .signUp3Main__phoneSend, .signUp3Main__phoneCheck {
+  border-radius: 4px;
+  line-height: 150%;
+  font-size: 0.875rem;
+}
+.signUp3Main__phoneNumber {
+  border: 0.5px solid #000000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: #919191;
+}
+.signUp3Main__phoneSend {
+  border: 0.5px solid #919191;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #FFFFFF;
+  font-weight: 600;
+}
+.signUp3Main__phoneCheck {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: 0.5px solid #000000;
+}
+.signUp3Main__start {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.signUp3Main__startWarn {
+  font-size: 0.625rem;
+  line-height: 160%;
+  color: #919191;
+}
+.signUp3Main__startBtn {
+  margin-top: 0.75rem;
+  margin-bottom: 0.625rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #919191;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+.signUp3Main__startNo {
+  font-size: 0.625rem;
+  line-height: 160%;
+  text-decoration: underline;
+  text-align: center;
+  color: #919191;
+}
+
+.signUpHeader {
+  margin-top: 37px;
+}
+
+.signUpMain__info {
+  padding: 0.75rem 3.875rem 0.75rem 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+.signUpMain__infoMore {
+  font-size: 0.625rem;
+  line-height: 160%;
+}
 .signUpMain__phone {
-=======
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0.1875rem 0.875rem 0.75rem 0.75rem;
+  gap: 0.75rem;
+}
+.signUpMain__phoneNumber, .signUpMain__phoneSend {
+  border-radius: 4px;
+  line-height: 150%;
+}
+.signUpMain__phoneNumber {
+  border: 0.5px solid #000000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+}
+.signUpMain__phoneSend {
+  border: 0.5px solid #919191;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #FFFFFF;
+  color: #919191;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.signUpMain__find {
+  font-size: 0.625rem;
+  line-height: 160%;
+  text-align: center;
+}
+.signUpMain__findEmail {
+  text-decoration: underline;
+}
+
 body {
-<<<<<<< HEAD
   margin-bottom: 69px;
   position: relative;
 }
@@ -1382,142 +1609,10 @@ body {
   padding-bottom: 2.8125rem;
 }
 .imgWrap .captionWrap {
->>>>>>> dev
->>>>>>> dev
->>>>>>> dev
->>>>>>> dev
->>>>>>> dev
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: stretch;
-<<<<<<< HEAD
-  margin: 0.1875rem 0.75rem 0.75rem 0.75rem;
-=======
-<<<<<<< HEAD
-  margin: 0.1875rem 0.875rem 0.75rem 0.75rem;
->>>>>>> dev
-  gap: 0.75rem;
-}
-.login2Main__phoneNumber, .login2Main__phoneSend {
-  border-radius: 4px;
-  line-height: 150%;
-}
-<<<<<<< HEAD
-.login2Main__phoneNumber {
-=======
-.loginMain__phoneNumber {
-=======
-<<<<<<< HEAD
-  margin: 0.1875rem 0.625rem 0.375rem 0.75rem;
-  gap: 0.8125rem;
-}
-.signUpMain__phoneNumber, .signUpMain__phoneSend, .signUpMain__phoneCheck {
-  border-radius: 4px;
-  line-height: 150%;
-  font-size: 0.875rem;
-=======
-<<<<<<< HEAD
-  margin: 0.1875rem 0.875rem 0.75rem 0.75rem;
-  gap: 0.75rem;
-}
-.signUp2Main__phoneNumber, .signUp2Main__phoneSend {
-  border-radius: 4px;
-  line-height: 150%;
->>>>>>> dev
-}
-.signUp2Main__phoneNumber {
->>>>>>> dev
->>>>>>> dev
-  border: 0.5px solid #000000;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-<<<<<<< HEAD
-  font-size: 0.875rem;
-}
-<<<<<<< HEAD
-.login2Main__phoneSend {
-=======
-.loginMain__phoneSend {
-=======
-<<<<<<< HEAD
-  color: #919191;
-=======
-  font-size: 0.875rem;
-<<<<<<< HEAD
-  color: #000000;
-=======
->>>>>>> dev
->>>>>>> dev
-}
-.signUp2Main__phoneSend {
->>>>>>> dev
->>>>>>> dev
-  border: 0.5px solid #919191;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background: #FFFFFF;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  color: #919191;
->>>>>>> dev
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-.login2Main__find {
-  margin-left: 0.75rem;
-=======
-<<<<<<< HEAD
-  color: #000000;
-=======
-<<<<<<< HEAD
-  font-weight: 600;
-}
-.signUpMain__phoneCheck {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  border: 0.5px solid #000000;
-}
-.signUpMain__start {
-=======
-  color: #919191;
->>>>>>> dev
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-.signUp2Main__find {
->>>>>>> dev
-  font-size: 0.625rem;
-  line-height: 160%;
-  text-align: center;
-}
-<<<<<<< HEAD
-.login2Main__findEmail {
-=======
-<<<<<<< HEAD
-.loginMain__findEmail {
->>>>>>> dev
-  text-decoration: underline;
-}
-
-=======
-.signUp2Main__findEmail {
-  text-decoration: underline;
-}
-
-<<<<<<< HEAD
-=======
-.signUpKeyboard {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  object-fit: cover;
-=======
   gap: 0.125rem;
   width: 46.25%;
 }
@@ -1528,40 +1623,10 @@ body {
   min-width: 12.625rem;
 }
 .imgWrap__imgCaption {
->>>>>>> dev
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: stretch;
-<<<<<<< HEAD
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-.signUpMain__startWarn {
-  font-size: 0.625rem;
-  line-height: 160%;
-  color: #919191;
-}
-.signUpMain__startBtn {
-  margin-top: 0.75rem;
-  margin-bottom: 0.625rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  border: none;
-  border-radius: 8px;
-  background: #919191;
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 140%;
-}
-.signUpMain__startNo {
-  font-size: 0.625rem;
-  line-height: 160%;
-  text-decoration: underline;
-  text-align: center;
-  color: #919191;
-=======
   gap: 3.625rem;
   color: #FFFFFF;
 }
@@ -1616,7 +1681,9 @@ body {
   content: "";
   border-right: 0.0625rem solid #919191;
   margin-right: 0.375rem;
-=======
+}
+
+body {
   margin: 3.75% 0;
 }
 
@@ -1676,10 +1743,6 @@ h3 {
 .search__list li a {
   text-decoration: none;
   color: inherit;
->>>>>>> dev
->>>>>>> dev
->>>>>>> dev
->>>>>>> dev
 }
 
 body {
@@ -1756,6 +1819,199 @@ body {
   white-space: nowrap;
 }
 
->>>>>>> dev
->>>>>>> dev
+.chat_header_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 3.75%;
+}
+.chat_header_wrap li {
+  display: inline;
+}
+
+.chat_status_wrap {
+  margin-top: 12px;
+}
+
+.chat_status_box_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.chat_status_txt {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.chat_status_txt span {
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.chat_status_co {
+  margin-bottom: 2px;
+}
+
+.chat_status_box {
+  width: 34px;
+  height: 34px;
+  background: #bdbdbd;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.chat_wrap_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat_wrap_title span:first-child {
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+.chat_wrap_title span:last-child {
+  color: #919191;
+  font-size: 0.625rem;
+}
+
+.chat_status_wrap {
+  border-bottom: 1px solid #ccc;
+  padding: 0 3.75%;
+}
+
+.chat_status_btn_wrap {
+  margin-bottom: 0.75rem;
+  padding: 0.375rem 0;
+}
+
+.chat_status_btn {
+  background: #FFFFFF;
+  border: 1px solid #919191;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.chat_status_btn img {
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+.caht_btn_second {
+  margin-left: 4px;
+}
+
+.chat_alert {
+  margin: 0.75rem 3.75% 1.25rem;
+  padding: 0.75rem 1.25rem;
+  color: #FFFFFF;
+  background: #8DB0F9;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  line-height: 160%;
+}
+.chat_alert span:first-child {
+  font-weight: 600;
+  margin-right: 4px;
+}
+.chat_alert a {
+  text-decoration: underline;
+}
+.chat_alert img {
+  margin-right: 2px;
+}
+
+.chat_alert_light {
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+.chat_date {
+  color: #919191;
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.chat_blue_wrap {
+  margin: 0 3.75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.chat_blue_time {
+  color: #919191;
+  font-size: 0.75rem;
+  margin-bottom: 0.625rem;
+  margin-right: 0.375rem;
+}
+
+.chat_blue {
+  padding: 0.75rem 1.125rem;
+  background-color: #8DB0F9;
+  border-radius: 1.25rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat_gray {
+  display: inline-block;
+  background: #EBECF0;
+  line-height: 160%;
+  margin-left: 3.75%;
+  padding: 0.75rem 1.125rem;
+  border-radius: 1.25rem;
+  width: 75.5%;
+  margin-bottom: 0.5rem;
+}
+
+.chat_gray_time {
+  color: #919191;
+  font-size: 0.75rem;
+  margin-bottom: 0.125rem;
+}
+
+.chat_input {
+  margin: 12px 3.75% 0;
+  background: #FFFFFF;
+  padding-bottom: 30px;
+  padding-top: 12px;
+  width: 92.5%;
+  position: fixed;
+  bottom: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat_input input {
+  width: 100%;
+  margin: 0 8px;
+  border: none;
+  font-size: rme(14px);
+  color: #9DA1B4;
+  padding: 0.625rem 1rem;
+  border-radius: 20px;
+  background: #EBECF0 url(./../../images/chat/smile.png) no-repeat;
+  background-position: right center;
+  background-origin: content-box;
+}
+
+.chat_plus {
+  width: 26px;
+  height: 26px;
+}
+
+.chat_send {
+  width: 18px;
+  height: 18px;
+}
+
 /*# sourceMappingURL=index.css.map */
