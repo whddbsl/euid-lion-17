@@ -3389,4 +3389,91 @@ body {
   background: none;
 }
 
+.qna {
+  /* 헤더 */
+  /* 메인 */
+}
+.qna__header {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 0.4375rem solid #BDBDBD;
+}
+.qna__title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0.375rem;
+}
+.qna__profile {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.qna__profile--header {
+  display: inline-block;
+  border-radius: 10px;
+  width: 3.375rem;
+  height: 3.375rem;
+  background-color: #EBECF0;
+}
+.qna__profile--name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-left: 0.5625rem;
+}
+.qna__profile--article {
+  display: inline-block;
+  border-radius: 10px;
+  width: 3.875rem;
+  height: 3.875rem;
+  background-color: #D3D3D3;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+.qna__participating {
+  background-color: #9DA1B4;
+  color: #FFFFFF;
+  padding: 0.375rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.65625rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.qna__main .board__article {
+  border-bottom: none;
+}
+.qna__main .board__article h3 {
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin: 0.1875rem;
+}
+.qna__main .board__article .board__subtitle {
+  margin-bottom: 0.25rem;
+}
+.qna__main .board__article .board__label {
+  padding: 0.125rem 0.75rem;
+}
+.qna__main .board__article .board__count {
+  transform: translateY(0.25rem);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+}
+.qna__main .board__article .icon__thumbsup {
+  background: url(./../../images/qna/thumbsup.png);
+  width: 1rem;
+  height: 1rem;
+}
+.qna__main .board__article .icon__speech {
+  background: url(./../../images/qna/speech.png);
+  width: 1rem;
+  height: 1rem;
+}
+
 /*# sourceMappingURL=index.css.map */
